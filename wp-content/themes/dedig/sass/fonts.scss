@@ -1,0 +1,70 @@
+@import 'attr.scss';
+
+/* FONTS */
+
+$varela: 'Varela Round', Helvetica, Arial, sans-serif;
+$opensans: 'Open Sans', Helvetica, Arial, sans-serif;
+
+// PLACEHOLDERS
+
+%headerFonts {
+	font-family: $varela;
+	font-weight: bold;
+}
+
+%smallFonts {
+	@media only screen and (max-width: $screen-md-min) {
+		font-size: 1.5em;
+	}
+	@media screen and (max-width: $screen-sm-min) {
+		font-size: 1.5em;
+	}
+}
+
+// MIXINS
+
+@mixin font ($size-lg, $color) {
+	font-size: $size-lg;
+	color: $color;
+}
+
+@mixin responsiveFonts ($size-md, $size-sm) {
+	@media only screen and (max-width: $screen-md-min) {
+		font-size: $size-md;
+	}
+	@media screen and (max-width: $screen-sm-min) {
+		font-size: $size-sm;
+	}
+}
+
+// CSS
+
+h1 {
+	@extend %headerFonts;
+	@include font(2em, $azul); // lg
+	@include responsiveFonts(1.5em, 1.5em); // md, sm
+}
+
+h2, button {
+	@extend %headerFonts;
+	@extend %smallFonts;
+	@include font(1.3em, $laranja);
+}
+
+h3, label {
+	@extend %headerFonts;
+	@extend %smallFonts;
+	@include font(1.2em, $azulclaro);
+}
+
+h4 {
+	@extend %headerFonts;
+	@extend %smallFonts;
+	@include font(1.2em, $branco);
+}
+
+p, input {
+	font-family: $opensans;
+	@extend %smallFonts;
+	@include font(1em, $cinza);
+}

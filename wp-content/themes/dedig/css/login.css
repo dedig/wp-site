@@ -1,0 +1,69 @@
+.login-box input[type=submit] {
+  font-weight: normal;
+  border-radius: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  padding: 20px; }
+
+.login-box input[type=submit]:active {
+  margin-top: 3px;
+  padding-bottom: 19px;
+  border: none; }
+
+.login-box input[type=submit]:focus {
+  outline: none; }
+
+.login {
+  height: auto;
+  min-height: 900px; }
+  @media only screen and (max-width: 768px) {
+    .login {
+      height: auto;
+      min-height: 400px; } }
+
+#login-bg {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+  #login-bg img {
+    min-height: 1110px; }
+
+.login-box {
+  background-color: #266ab8;
+  margin: 127px 25%;
+  border-radius: 5px;
+  padding: 15px;
+  width: 50%; }
+  .login-box input, .login-box button {
+    margin-bottom: 30px; }
+  .login-box h1, .login-box label {
+    color: #FFF; }
+  .login-box label {
+    text-align: left;
+    width: 100%;
+    color: #2ba7e7; }
+  .login-box input {
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #1c4d83; }
+  .login-box input:focus {
+    outline: none;
+    background-color: #eeeebb; }
+  .login-box input[type=submit] {
+    width: 100px; }
+  .login-box input[type=submit] {
+    color: #fff;
+    background-color: #e07b4d;
+    border-color: #c05527; }
+  .login-box input[type=submit]:hover {
+    background-color: #f1a581;
+    border-color: #e07b4d; }
+  .login-box input[type=submit]:active {
+    background-color: #e07b4d; }
+  @media only screen and (max-width: 992px) {
+    .login-box {
+      width: 90%;
+      margin: 127px 5%; } }
+
+/*# sourceMappingURL=login.css.map */

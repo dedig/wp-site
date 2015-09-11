@@ -1,0 +1,23 @@
+/* RESET */
+body {
+  margin: 0 auto;
+  text-align: center; }
+
+* {
+  border: 0 none;
+  color: #727272;
+  text-decoration: none;
+  list-style: none; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background-color: #FFF;
+  overflow-x: hidden; }
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  outline: none; }
+
+/*# sourceMappingURL=reset.css.map */

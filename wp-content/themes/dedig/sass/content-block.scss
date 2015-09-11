@@ -1,0 +1,218 @@
+@import 'attr.scss';
+@import 'button.scss';
+@import 'footer.scss';
+
+// PLACEHOLDERS
+
+%onda-height {
+	height: 40px;
+
+	@media only screen and (max-width: 1900px) {
+		height: 20px;
+	}
+
+	@media only screen and (max-width: 1000px) {
+		height: 10px;
+	}
+
+	@media only screen and (max-width: $screen-xs-max) {
+		height: 5px;
+	}
+}
+
+// MIXINS
+
+@mixin onda ($bgfile) {
+	@extend %onda-height;
+	background-image: url($bgfile);
+}
+
+/* CONTENT */
+
+.onda-azul-top { @include onda('img/onda-azul-top.svg'); }
+.onda-laranja-top { @include onda('img/onda-laranja-top.svg'); }
+.onda-azul-bottom { @include onda('img/onda-azul-bottom.svg'); }
+.onda-laranja-bottom { @include onda('img/onda-laranja-bottom.svg'); }
+
+#cta-index {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	display: block;
+	z-index: 0;
+
+	#img-cta-index-bg {
+		width: 100% !important;
+		margin: 0 !important;
+		position: absolute;
+		left: 0;
+		z-index: -1;
+	}
+
+	h1 {
+		margin-bottom: 30px;
+		font-size: 2em;
+		width: 100%;
+	}
+
+	@include btn($laranjaclaro, $laranja, $laranjaescuro);
+
+	button {
+		margin-bottom: 30px;
+	}
+
+	img, video {
+		width: 50%;
+		margin: 0 25% 30px;
+		cursor: pointer;
+
+		@media only screen and (max-width: $screen-md-min) {
+			width: 70%;
+			margin: 0 15% 30px;
+		}
+
+		@media only screen and (max-width: $screen-sm-min) {
+			width: 80%;
+			margin: 0 10% 30px;
+		}
+	}
+}
+
+.content-block {
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	.text-block {
+		text-align: left;
+	}
+
+	img {
+		width: 100%;
+		max-width: 360px;
+	}
+
+	.text-block {
+		@media only screen and (max-width: $screen-sm-min) {
+			text-align: center;
+		}
+	}
+}
+
+.sub-block {
+	padding-top: 0px !important;
+}
+
+.orange-block {
+	background-color: $laranja;
+
+	h1, h2, h3, label, h4 a, p {
+		color: $branco;
+	}
+
+	h4 a:hover {
+		color: $laranjaescuro;
+	}
+
+	.text-block {
+		@media only screen and (max-width: $screen-sm-min) {
+			text-align: center;
+		}
+	}
+}
+
+.blue-block {
+	background-color: $azul;
+
+	h1, p {
+		color: $branco;
+	}
+}
+
+.social-equipe {
+	width: 38px;
+	height: 38px;
+	overflow: hidden;
+	display: inline-block;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+
+#mail-equipe { @include pos(); }
+#facebook-equipe { @include pos(-38px); }
+#twitter-equipe { @include pos(-76px); }
+#linkedin-equipe { @include pos(-114px); }
+#mail-equipe:hover { @include pos(0, -38px); }
+#facebook-equipe:hover { @include pos(-38px, -38px); }
+#twitter-equipe:hover { @include pos(-76px, -38px); }
+#linkedin-equipe:hover { @include pos(-114px, -38px); }
+
+.personagem img {
+	width: 100%;
+	height: auto;
+
+	@media only screen and (max-width: $screen-sm-min) {
+		width: 60%;
+	}
+
+	@media only screen and (max-width: $screen-xs-max) {
+		width: 100%;
+	}
+}
+
+.personagem-bio {
+	text-align:left;
+	height:310px;
+	
+	@media only screen and (max-width: $screen-md-min) {
+		height: 380px;
+	}
+
+	@media only screen and (max-width: $screen-sm-min) {
+		text-align: center;
+		height: auto;
+	}
+}
+
+.equipe {
+	height: 500px;
+	margin-bottom: 20px;
+
+	img {
+		width: 100%;
+
+		@media only screen and (max-width: $screen-sm-min) {
+			width: 80%;
+		}
+
+		@media only screen and (max-width: $screen-xs-max) {
+			width: 100%;
+		}
+	}
+
+	.equipe-block {
+		border-bottom: 1px solid $cinzaclaro;
+	}
+
+	@media only screen and (max-width: $screen-md-min) {
+		height: 540px;
+	}
+}
+
+#erro404 {
+	height: 600px;
+	padding-top: 280px;
+}
+
+#entrar {
+	margin: 30px 0;
+	@include btn($laranjaclaro, $laranja, $laranjaescuro);
+	button {
+		width: 33.3%;
+		margin-left: 66.6%;
+
+		@media only screen and (max-width: $screen-sm-min) {
+			width: 90%;
+			margin-left: 5%;
+		}
+	}
+}

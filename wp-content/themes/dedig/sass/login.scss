@@ -1,0 +1,67 @@
+@import 'attr.scss';
+@import 'button.scss';
+
+.login {
+	height: auto;
+	min-height: 900px;
+
+	@media only screen and (max-width: $screen-sm-min) {
+		height: auto;
+		min-height: 400px;
+	}
+}
+
+#login-bg {
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+
+	img {
+		min-height: 1110px;
+	}
+}
+
+.login-box {
+	background-color: $azul;
+	margin: 127px 25%;
+	border-radius: 5px;
+	padding: 15px;
+	width: 50%;
+
+	input, button {
+		margin-bottom: 30px;
+	}
+
+	h1, label {
+		color: $branco;
+	}
+
+	label {
+		text-align: left;
+		width: 100%;
+		color: $azulclaro;
+	}
+
+	input {
+		width: 100%;
+		padding: 10px;
+		border: solid 1px $azulescuro;
+	}
+
+	input:focus {
+		outline: none;
+		background-color: #eeeebb;
+	}
+
+	input[type=submit] {
+		width: 100px;
+	}
+	
+	@include submit($laranjaclaro, $laranja, $laranjaescuro);
+
+	@media only screen and (max-width: $screen-md-min) {
+		width: 90%;
+		margin: 127px 5%;
+	}
+}

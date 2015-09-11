@@ -1,0 +1,40 @@
+/* FONTS */
+h1, h2, button, h3, label, h4 {
+  font-family: "Varela Round", Helvetica, Arial, sans-serif;
+  font-weight: bold; }
+
+@media only screen and (max-width: 992px) {
+  h2, button, h3, label, h4, p, input {
+    font-size: 1.5em; } }
+@media screen and (max-width: 768px) {
+  h2, button, h3, label, h4, p, input {
+    font-size: 1.5em; } }
+
+h1 {
+  font-size: 2em;
+  color: #266ab8; }
+  @media only screen and (max-width: 992px) {
+    h1 {
+      font-size: 1.5em; } }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.5em; } }
+
+h2, button {
+  font-size: 1.3em;
+  color: #e07b4d; }
+
+h3, label {
+  font-size: 1.2em;
+  color: #2ba7e7; }
+
+h4 {
+  font-size: 1.2em;
+  color: #FFF; }
+
+p, input {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  color: #727272; }
+
+/*# sourceMappingURL=fonts.css.map */

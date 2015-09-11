@@ -1,0 +1,72 @@
+@import 'attr.scss';
+
+/* FOOTER */
+
+// MIXINS
+
+@mixin pos($posX: 0, $posY: 0) {
+	margin-left: $posX;
+	margin-top: $posY;
+	width: auto;
+}
+
+// CSS
+
+#footer-menu {
+	background-color: $azul;
+	padding-top: 30px;
+
+	.footer-item {
+		padding-bottom: 30px;
+		text-align: left;
+	}
+
+	p, a {
+	color: $branco;
+	}
+
+	ul{
+		padding-left: 0;
+	}
+
+	a p:hover, a:hover {
+		color: $azulclaro;
+	}
+
+	@media only screen and (max-width: $screen-sm-min) {
+		.footer-item {
+			text-align: center;
+		}
+	}
+}
+
+#logo-footer {
+	width: 70%;
+
+	@media only screen and (max-width: $screen-sm-min) {
+		width: auto;
+	}
+
+	@media only screen and (max-width: $screen-xs-max) {
+		width: 100%;
+	}
+}
+
+.social {
+	width: 41px;
+	height: 41px;
+	overflow: hidden;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#twitter { @include pos(-41px); }
+#youtube { @include pos(-82px); }
+#facebook:hover { @include pos(0, -41px); }
+#twitter:hover { @include pos(-41px, -41px); }
+#youtube:hover { @include pos(-82px, -41px); }
+
+#copyright {
+	background-color: $azulescuro;
+	padding: 15px 0;
+}
