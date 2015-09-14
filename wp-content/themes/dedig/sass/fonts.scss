@@ -41,30 +41,57 @@ $opensans: 'Open Sans', Helvetica, Arial, sans-serif;
 
 h1 {
 	@extend %headerFonts;
-	@include font(2em, $azul); // lg
-	@include responsiveFonts(1.5em, 1.5em); // md, sm
+	@include font(2.6em, $azul); // lg
+	@include responsiveFonts(2.2em, 2.2em); // md, sm
 }
 
 h2, button {
 	@extend %headerFonts;
 	@extend %smallFonts;
-	@include font(1.3em, $laranja);
+	@include font(1.8em, $laranja);
 }
 
 h3, label {
 	@extend %headerFonts;
 	@extend %smallFonts;
-	@include font(1.2em, $azulclaro);
+	@include font(1.8em, $azulclaro);
 }
 
 h4 {
 	@extend %headerFonts;
 	@extend %smallFonts;
-	@include font(1.2em, $branco);
+	@include font(1.8em, $branco);
 }
 
 p, input {
 	font-family: $opensans;
 	@extend %smallFonts;
-	@include font(1em, $cinza);
+	@include font(1.5em, $cinza);
+}
+
+footer p {
+	@include font(1.2em, $branco);
+	@include responsiveFonts(1.2em, 1.5em);
+}
+
+#buttons h2 {
+	@include font(1.2em, $branco);
+	@include responsiveFonts(1.2em, 1.5em);
+}
+
+#cta-index h1 {
+	@include font(2em, $azul);
+}
+
+.blue-block {
+	ul, li {
+		font-family: $opensans;
+		@include font(2.1rem, $branco);
+		@include responsiveFonts(1rem, 1rem);
+	}
+}
+
+.banner h1 {
+	@include font(3rem, $branco);
+	@include responsiveFonts(2.4rem, 1.2rem);
 }

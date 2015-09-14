@@ -1,6 +1,8 @@
 @import 'attr.scss';
 @import 'button.scss';
 
+$menu-break : 820px;
+
 /* MAIN MENU */
 
 // CSS
@@ -14,7 +16,7 @@
 	padding: 30px;
 	background-color: $azul;
 
-	@media only screen and (max-width: 840px) {
+	@media only screen and (max-width: $menu-break) {
 		z-index: 2;
 		height: 80px;
 		padding: 15px;
@@ -50,7 +52,7 @@
 		color: $azulescuro;
 	}
 
-	@media only screen and (max-width: 840px) {
+	@media only screen and (max-width: $menu-break) {
 		display: inline-block;
 	}
 }
@@ -74,7 +76,7 @@
 		color: $azulescuro;
 	}
 
-	@media only screen and (max-width: 840px) {
+	@media only screen and (max-width: $menu-break) {
 		background-color: $cinzaescuro;
 		float: left;
 		position: absolute;

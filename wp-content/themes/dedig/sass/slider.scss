@@ -33,7 +33,7 @@
 	}
 
 	h1 {
-		@include inverseMargin(80px);
+		@include inverseMargin(60px);
 		color: $branco;
 		z-index: 1;
 		width: 100%;

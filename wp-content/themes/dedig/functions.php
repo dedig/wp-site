@@ -3,8 +3,26 @@
 // Para não exibir a Admin Bar do Wordpress
 add_filter('show_admin_bar', '__return_false');
 
-// Para exibir  a opção de imagem de destaque
+// Para exibir a opção de imagem de destaque
 add_theme_support('post-thumbnails'); 
+
+// Mudando painel wp-admin
+add_action('admin_head', 'wp_admin_changes');
+
+function wp_admin_changes() {
+	echo '<style>
+		#adminmenu {
+			float: left;
+			height: auto;
+		}
+		.wp-admin-name, .wp-has-submenu, .wp-has-current-submenu, .wp-menu-open, .menu-top, .menu-icon-media {
+			height: auto;
+		}
+		.wp-first-item, .current, .wp-first-item a, .current a {
+			height: auto;
+		} 
+	</style>';
+}
 
 // Post Type: Banners
 add_action('init', 'type_post_banners');
@@ -77,6 +95,10 @@ function blocos_add_meta_box() {
 		add_meta_box('meta_box_bloco_3_content', __( 'Bloco 3 - Conteúdo' ), 'bloco_3_content', $screen);
 		add_meta_box('meta_box_bloco_4_title', __( 'Bloco 4 - Título' ), 'bloco_4_title', $screen);
 		add_meta_box('meta_box_bloco_4_content', __( 'Bloco 4 - Conteúdo' ), 'bloco_4_content', $screen);
+		add_meta_box('meta_box_bloco_5_title', __( 'Bloco 5 - Título' ), 'bloco_5_title', $screen);
+		add_meta_box('meta_box_bloco_5_content', __( 'Bloco 5 - Conteúdo' ), 'bloco_5_content', $screen);
+		add_meta_box('meta_box_bloco_6_title', __( 'Bloco 6 - Título' ), 'bloco_6_title', $screen);
+		add_meta_box('meta_box_bloco_6_content', __( 'Bloco 6 - Conteúdo' ), 'bloco_6_content', $screen);
 	}
 }
 add_action( 'add_meta_boxes', 'blocos_add_meta_box' );
@@ -117,6 +139,30 @@ function bloco_4_content() {
 <textarea rows="10" name="bloco_4_content_value_meta" style="width:100%;"><?php echo $bloco_4_content_value; ?></textarea>
 <?php
 }
+function bloco_5_title() {
+	global $post;
+	$bloco_5_title_value = get_post_meta($post->ID, 'bloco_5_title_value_meta', true); ?>
+<input type="text" name="bloco_5_title_value_meta" value="<?php echo $bloco_5_title_value; ?>" style="width:100%;" />
+<?php
+}
+function bloco_5_content() {
+	global $post;
+	$bloco_5_content_value = get_post_meta($post->ID, 'bloco_5_content_value_meta', true); ?>
+<textarea rows="10" name="bloco_5_content_value_meta" style="width:100%;"><?php echo $bloco_5_content_value; ?></textarea>
+<?php
+}
+function bloco_6_title() {
+	global $post;
+	$bloco_6_title_value = get_post_meta($post->ID, 'bloco_6_title_value_meta', true); ?>
+<input type="text" name="bloco_6_title_value_meta" value="<?php echo $bloco_6_title_value; ?>" style="width:100%;" />
+<?php
+}
+function bloco_6_content() {
+	global $post;
+	$bloco_6_content_value = get_post_meta($post->ID, 'bloco_6_content_value_meta', true); ?>
+<textarea rows="10" name="bloco_6_content_value_meta" style="width:100%;"><?php echo $bloco_6_content_value; ?></textarea>
+<?php
+}
 
 add_action('save_post', 'save_blocos');
 
@@ -128,6 +174,10 @@ function save_blocos(){
 	update_post_meta($post->ID, 'bloco_3_content_value_meta', $_POST['bloco_3_content_value_meta']);
 	update_post_meta($post->ID, 'bloco_4_title_value_meta', $_POST['bloco_4_title_value_meta']);
 	update_post_meta($post->ID, 'bloco_4_content_value_meta', $_POST['bloco_4_content_value_meta']);
+	update_post_meta($post->ID, 'bloco_5_title_value_meta', $_POST['bloco_5_title_value_meta']);
+	update_post_meta($post->ID, 'bloco_5_content_value_meta', $_POST['bloco_5_content_value_meta']);
+	update_post_meta($post->ID, 'bloco_6_title_value_meta', $_POST['bloco_6_title_value_meta']);
+	update_post_meta($post->ID, 'bloco_6_content_value_meta', $_POST['bloco_6_content_value_meta']);
 }
 
 // Banners Meta Box

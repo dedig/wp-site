@@ -37,8 +37,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="onda-azul-top fluid"></div>
-			<div class="row content-block blue-block fluid">
+			<div class="row content-block">
 				<div class="col-sm-4">
 					<img src="<?php bloginfo('template_directory'); ?>/img/Artur-e-Mel.png" />
 				</div>
@@ -47,13 +46,18 @@ get_header(); ?>
 					<p><?php echo $content3; ?></p>
 				</div>
 			</div>
-			<div class="onda-azul-bottom fluid"></div>
-			<div class="row content-block">
-				<div class="col-sm-12 text-block">
+
+			<div class="onda-azul-top fluid"></div>
+			<div class="row content-block blue-block fluid">
+				<div class="col-sm-8 text-block">
 					<h1><?php echo $title4; ?></h1>
 					<p><?php echo $content4; ?></p>
 				</div>
+				<div class="col-sm-4">
+					<img src="<?php bloginfo('template_directory'); ?>/img/Artur-e-Mel.png" />
+				</div>
 			</div>
+			<div class="onda-azul-bottom fluid"></div>
 			<div class="row posts-block">
 				<div class="col-md-12">
 					<h1>Equipe</h1>

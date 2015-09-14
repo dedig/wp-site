@@ -13,6 +13,10 @@ get_header(); ?>
 				$content3 = get_post_meta($post->ID, 'bloco_3_content_value_meta', true);
 				$title4 = get_post_meta($post->ID, 'bloco_4_title_value_meta', true);
 				$content4 = get_post_meta($post->ID, 'bloco_4_content_value_meta', true);
+				$title5 = get_post_meta($post->ID, 'bloco_5_title_value_meta', true);
+				$content5 = get_post_meta($post->ID, 'bloco_5_content_value_meta', true);
+				$title6 = get_post_meta($post->ID, 'bloco_6_title_value_meta', true);
+				$content6 = get_post_meta($post->ID, 'bloco_6_content_value_meta', true);
 		?>
 		<article>
 			<div class="row content-block">
@@ -34,8 +38,8 @@ get_header(); ?>
 					<img src="<?php bloginfo('template_directory'); ?>/img/sondagem.png">
 				</div>
 				<div class="col-sm-8 text-block">
-					<h2>Sondagem</h2>
-					<p>Etapa do desafio que tem como objetivo levar o aluno a usar o conhecimento prévio sobre o assunto, permitindo o contato com o conteúdo a ser desenvolvido. </p>
+					<h2><?php echo $title3; ?></h2>
+					<p><?php echo $content3; ?></p>
 				</div>
 			</div>
 			<div class="row content-block orange-block fluid">
@@ -43,8 +47,8 @@ get_header(); ?>
 					<img src="<?php bloginfo('template_directory'); ?>/img/atividade.png">
 				</div>
 				<div class="col-sm-8 text-block">
-					<h2>Atividade</h2>
-					<p>Etapa que tem o objetivo de aprendizagem e aplicação dos conhecimentos a respeito do assunto, onde o aluno vai vivenciar a tenacidade e o interesse pelo desafio. </p>
+					<h2><?php echo $title4; ?></h2>
+					<p><?php echo $content4; ?> </p>
 				</div>
 			</div>
 			<div class="row content-block orange-block fluid">
@@ -52,16 +56,16 @@ get_header(); ?>
 					<img src="<?php bloginfo('template_directory'); ?>/img/avaliacao.png">
 				</div>
 				<div class="col-sm-8 text-block">
-					<h2>Avaliação</h2>
-					<p>Etapa em que o aluno já se apropriou do conteúdo e vai demonstrar o que aprendeu, dando ao professor informações sobre o seu desenvolvimento.</p>
+					<h2><?php echo $title5; ?></h2>
+					<p><?php echo $content5; ?></p>
 				</div>
 			</div>
 			<div class="onda-laranja-bottom fluid"></div>
 
 			<div class="row content-block">
 				<div class="col-sm-12 text-block">
-					<h1><?php echo $title3; ?></h1>
-					<p><?php echo $content3; ?></p>
+					<h1><?php echo $title6; ?></h1>
+					<p><?php echo $content6; ?></p>
 				</div>
 			</div>
 

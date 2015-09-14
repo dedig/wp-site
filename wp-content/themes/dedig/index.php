@@ -27,12 +27,6 @@ get_header(); ?>
 			<?php endif; endwhile; ?>
 		</ul>
 		<h1>Descubra a sala Dedig!</h1>
-		<img alt="Video sobre a Dedig" title="Clique para assistir" src="<?php bloginfo('template_directory'); ?>/img/video-placeholder.jpg" />
-		<!-- <video controls>
-			<source src="movie.mp4" type="video/mp4">
-			<source src="movie.ogg" type="video/ogg">
-			Your browser does not support the video tag.
-		</video> -->				
 		<a href="#"><button>Clique e descubra!</button></a>
 	</div>
 	
@@ -50,6 +44,8 @@ get_header(); ?>
 				$content3 = get_post_meta($post->ID, 'bloco_3_content_value_meta', true);
 				$title4 = get_post_meta($post->ID, 'bloco_4_title_value_meta', true);
 				$content4 = get_post_meta($post->ID, 'bloco_4_content_value_meta', true);
+				$title5 = get_post_meta($post->ID, 'bloco_5_title_value_meta', true);
+				$content5 = get_post_meta($post->ID, 'bloco_5_content_value_meta', true);
 		?>
 		<article>
 			<div class="row content-block">
@@ -61,24 +57,32 @@ get_header(); ?>
 					<img src="<?php bloginfo('template_directory'); ?>/img/artur-home.png" />
 				</div>
 			</div>
-			<div class="onda-laranja-top fluid"></div>
-			<div class="row content-block orange-block fluid">
+			<div class="row content-block">
 				<div class="col-sm-4">
-					<img src="<?php bloginfo('template_directory'); ?>/img/dimi-home.png" />
+					<img src="<?php bloginfo('template_directory'); ?>/img/mel-home.png" />
 				</div>
 				<div class="col-sm-8 text-block">
 					<h1><?php echo $title3; ?></h1>
-					<h4><?php echo $content3; ?></h4>
+					<p><?php echo $content3; ?></p>
+				</div>
+			</div>
+
+			<div class="onda-laranja-top fluid"></div>
+			<div class="row content-block orange-block fluid">
+				<div id="cta-index" class="col-sm-12 text-block">
+					<h1><?php echo $title4; ?></h1>
+					<iframe src="https://www.youtube.com/embed/g4q8Jhn3YhQ" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 			<div class="onda-laranja-bottom fluid"></div>
+			
 			<div class="row content-block">
 				<div class="col-sm-8 text-block">
-					<h1><?php echo $title4; ?></h1>
-					<p><?php echo $content4; ?></p>
+					<h1><?php echo $title5; ?></h1>
+					<h4><?php echo $content5; ?></h4>
 				</div>
 				<div class="col-sm-4">
-					<img src="<?php bloginfo('template_directory'); ?>/img/mel-home.png" />
+					<img src="<?php bloginfo('template_directory'); ?>/img/dimi-home.png" />
 				</div>
 			</div>
 		</article>

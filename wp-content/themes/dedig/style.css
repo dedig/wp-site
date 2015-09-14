@@ -26,31 +26,76 @@ h1, h2, button, h3, label, h4 {
     font-size: 1.5em; } }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.6em;
   color: #266ab8; }
   @media only screen and (max-width: 992px) {
     h1 {
-      font-size: 1.5em; } }
+      font-size: 2.2em; } }
   @media screen and (max-width: 768px) {
     h1 {
-      font-size: 1.5em; } }
+      font-size: 2.2em; } }
 
 h2, button {
-  font-size: 1.3em;
+  font-size: 1.8em;
   color: #e07b4d; }
 
 h3, label {
-  font-size: 1.2em;
+  font-size: 1.8em;
   color: #2ba7e7; }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 1.8em;
   color: #FFF; }
 
 p, input {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
   color: #727272; }
+
+footer p {
+  font-size: 1.2em;
+  color: #FFF; }
+  @media only screen and (max-width: 992px) {
+    footer p {
+      font-size: 1.2em; } }
+  @media screen and (max-width: 768px) {
+    footer p {
+      font-size: 1.5em; } }
+
+#buttons h2 {
+  font-size: 1.2em;
+  color: #FFF; }
+  @media only screen and (max-width: 992px) {
+    #buttons h2 {
+      font-size: 1.2em; } }
+  @media screen and (max-width: 768px) {
+    #buttons h2 {
+      font-size: 1.5em; } }
+
+#cta-index h1 {
+  font-size: 2em;
+  color: #266ab8; }
+
+.blue-block ul, .blue-block li {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 2.1rem;
+  color: #FFF; }
+  @media only screen and (max-width: 992px) {
+    .blue-block ul, .blue-block li {
+      font-size: 1rem; } }
+  @media screen and (max-width: 768px) {
+    .blue-block ul, .blue-block li {
+      font-size: 1rem; } }
+
+.banner h1 {
+  font-size: 3rem;
+  color: #FFF; }
+  @media only screen and (max-width: 992px) {
+    .banner h1 {
+      font-size: 2.4rem; } }
+  @media screen and (max-width: 768px) {
+    .banner h1 {
+      font-size: 1.2rem; } }
 
 /* RESET */
 body {
@@ -98,7 +143,7 @@ a:hover, a:focus, a:active {
   z-index: 1;
   padding: 30px;
   background-color: #266ab8; }
-  @media only screen and (max-width: 840px) {
+  @media only screen and (max-width: 820px) {
     #main-menu {
       z-index: 2;
       height: 80px;
@@ -128,7 +173,7 @@ a:hover, a:focus, a:active {
     color: #2ba7e7; }
   #list :active {
     color: #1c4d83; }
-  @media only screen and (max-width: 840px) {
+  @media only screen and (max-width: 820px) {
     #list {
       display: inline-block; } }
 
@@ -144,7 +189,7 @@ a:hover, a:focus, a:active {
     color: #2ba7e7; }
   #buttons h2:active {
     color: #1c4d83; }
-  @media only screen and (max-width: 840px) {
+  @media only screen and (max-width: 820px) {
     #buttons {
       background-color: #434343;
       float: left;
@@ -179,8 +224,8 @@ a:hover, a:focus, a:active {
     width: 100%;
     height: auto; }
   .banner h1 {
-    height: 80px;
-    margin-top: -80px;
+    height: 60px;
+    margin-top: -60px;
     color: #FFF;
     z-index: 1;
     width: 100%;
@@ -336,7 +381,6 @@ a:hover, a:focus, a:active {
     z-index: -1; }
   #cta-index h1 {
     margin-bottom: 30px;
-    font-size: 2em;
     width: 100%; }
   #cta-index button {
     color: #fff;
@@ -349,18 +393,27 @@ a:hover, a:focus, a:active {
     background-color: #e07b4d; }
   #cta-index button {
     margin-bottom: 30px; }
-  #cta-index img, #cta-index video {
+  #cta-index img, #cta-index video, #cta-index iframe {
     width: 50%;
+    height: auto;
+    min-height: 337.5px;
     margin: 0 25% 30px;
     cursor: pointer; }
     @media only screen and (max-width: 992px) {
-      #cta-index img, #cta-index video {
+      #cta-index img, #cta-index video, #cta-index iframe {
         width: 70%;
         margin: 0 15% 30px; } }
     @media only screen and (max-width: 768px) {
-      #cta-index img, #cta-index video {
+      #cta-index img, #cta-index video, #cta-index iframe {
         width: 80%;
-        margin: 0 10% 30px; } }
+        margin: 0 10% 30px;
+        min-height: 345.6px; } }
+    @media only screen and (max-width: 480px) {
+      #cta-index img, #cta-index video, #cta-index iframe {
+        min-height: 216px; } }
+    @media only screen and (max-width: 300px) {
+      #cta-index img, #cta-index video, #cta-index iframe {
+        min-height: 135px; } }
 
 .content-block {
   padding-top: 30px;
@@ -370,6 +423,10 @@ a:hover, a:focus, a:active {
   .content-block img {
     width: 100%;
     max-width: 360px; }
+  .content-block h4, .content-block h4 a {
+    color: #727272; }
+  .content-block h4 a:hover {
+    color: #c05527; }
   @media only screen and (max-width: 768px) {
     .content-block .text-block {
       text-align: center; } }
@@ -389,8 +446,11 @@ a:hover, a:focus, a:active {
 
 .blue-block {
   background-color: #266ab8; }
-  .blue-block h1, .blue-block p {
+  .blue-block h1, .blue-block p, .blue-block ul {
     color: #FFF; }
+  .blue-block ul, .blue-block li {
+    padding: 15px;
+    list-style: disc; }
 
 .social-equipe {
   width: 38px;

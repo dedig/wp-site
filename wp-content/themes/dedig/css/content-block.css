@@ -114,7 +114,6 @@
     z-index: -1; }
   #cta-index h1 {
     margin-bottom: 30px;
-    font-size: 2em;
     width: 100%; }
   #cta-index button {
     color: #fff;
@@ -127,18 +126,27 @@
     background-color: #e07b4d; }
   #cta-index button {
     margin-bottom: 30px; }
-  #cta-index img, #cta-index video {
+  #cta-index img, #cta-index video, #cta-index iframe {
     width: 50%;
+    height: auto;
+    min-height: 337.5px;
     margin: 0 25% 30px;
     cursor: pointer; }
     @media only screen and (max-width: 992px) {
-      #cta-index img, #cta-index video {
+      #cta-index img, #cta-index video, #cta-index iframe {
         width: 70%;
         margin: 0 15% 30px; } }
     @media only screen and (max-width: 768px) {
-      #cta-index img, #cta-index video {
+      #cta-index img, #cta-index video, #cta-index iframe {
         width: 80%;
-        margin: 0 10% 30px; } }
+        margin: 0 10% 30px;
+        min-height: 345.6px; } }
+    @media only screen and (max-width: 480px) {
+      #cta-index img, #cta-index video, #cta-index iframe {
+        min-height: 216px; } }
+    @media only screen and (max-width: 300px) {
+      #cta-index img, #cta-index video, #cta-index iframe {
+        min-height: 135px; } }
 
 .content-block {
   padding-top: 30px;
@@ -148,6 +156,10 @@
   .content-block img {
     width: 100%;
     max-width: 360px; }
+  .content-block h4, .content-block h4 a {
+    color: #727272; }
+  .content-block h4 a:hover {
+    color: #c05527; }
   @media only screen and (max-width: 768px) {
     .content-block .text-block {
       text-align: center; } }
@@ -167,8 +179,11 @@
 
 .blue-block {
   background-color: #266ab8; }
-  .blue-block h1, .blue-block p {
+  .blue-block h1, .blue-block p, .blue-block ul {
     color: #FFF; }
+  .blue-block ul, .blue-block li {
+    padding: 15px;
+    list-style: disc; }
 
 .social-equipe {
   width: 38px;

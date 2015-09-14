@@ -51,7 +51,6 @@
 
 	h1 {
 		margin-bottom: 30px;
-		font-size: 2em;
 		width: 100%;
 	}
 
@@ -61,8 +60,10 @@
 		margin-bottom: 30px;
 	}
 
-	img, video {
+	img, video, iframe {
 		width: 50%;
+		height: auto;
+		min-height: ((1200px * 0.5) / 16) * 9;
 		margin: 0 25% 30px;
 		cursor: pointer;
 
@@ -74,6 +75,15 @@
 		@media only screen and (max-width: $screen-sm-min) {
 			width: 80%;
 			margin: 0 10% 30px;
+			min-height: (($screen-sm-min * 0.8) / 16) * 9;
+		}
+
+		@media only screen and (max-width: $screen-xs-max) {
+			min-height: (($screen-xs-max * 0.8) / 16) * 9;
+		}
+
+		@media only screen and (max-width: 300px) {
+			min-height: ((300px * 0.8) / 16) * 9;
 		}
 	}
 }
@@ -89,6 +99,14 @@
 	img {
 		width: 100%;
 		max-width: 360px;
+	}
+
+	h4, h4 a {
+		color: $cinza;
+	}
+
+	h4 a:hover {
+		color: $laranjaescuro;
 	}
 
 	.text-block {
@@ -123,8 +141,13 @@
 .blue-block {
 	background-color: $azul;
 
-	h1, p {
+	h1, p, ul {
 		color: $branco;
+	}
+
+	ul, li {
+		padding: 15px;
+		list-style: disc;
 	}
 }
 
