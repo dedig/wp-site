@@ -17,10 +17,10 @@ get_header(); ?>
 		?>
 		<article>
 			<div class="row content-block orange-block fluid">
-				<div class="col-sm-4">
+				<div class="col-sm-4 img-block">
 					<img src="<?php bloginfo('template_directory'); ?>/img/logo-dedig-sobre.png" />
 				</div>
-				<div class="col-sm-8 text-block">
+				<div class="col-sm-8 text-block minor-text">
 					<h1><?php the_title(); ?></h1>
 					<p><?php the_content(); ?></p>
 				</div>
@@ -28,12 +28,12 @@ get_header(); ?>
 			<div class="onda-laranja-bottom fluid"></div>
 
 			<div class="row content-block">
-				<div class="col-sm-8 text-block">
-					<h1><?php echo $title2; ?></h1>
-					<p><?php echo $content2; ?></p>
-				</div>
 				<div class="col-sm-4">
 					<img src="<?php bloginfo('template_directory'); ?>/img/Dimi-e-Maite.png" />
+				</div>
+				<div class="col-sm-8 text-block">
+					<h1><?php echo $title2; ?></h1>
+					<p class="major-text"><?php echo $content2; ?></p>
 				</div>
 			</div>
 
@@ -43,18 +43,15 @@ get_header(); ?>
 				</div>
 				<div class="col-sm-8 text-block">
 					<h1><?php echo $title3; ?></h1>
-					<p><?php echo $content3; ?></p>
+					<p class="major-text"><?php echo $content3; ?></p>
 				</div>
 			</div>
 
 			<div class="onda-azul-top fluid"></div>
 			<div class="row content-block blue-block fluid">
-				<div class="col-sm-8 text-block">
+				<div class="col-sm-12 text-block">
 					<h1><?php echo $title4; ?></h1>
 					<p><?php echo $content4; ?></p>
-				</div>
-				<div class="col-sm-4">
-					<img src="<?php bloginfo('template_directory'); ?>/img/Artur-e-Mel.png" />
 				</div>
 			</div>
 			<div class="onda-azul-bottom fluid"></div>

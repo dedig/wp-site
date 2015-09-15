@@ -6,24 +6,6 @@ add_filter('show_admin_bar', '__return_false');
 // Para exibir a opção de imagem de destaque
 add_theme_support('post-thumbnails'); 
 
-// Mudando painel wp-admin
-add_action('admin_head', 'wp_admin_changes');
-
-function wp_admin_changes() {
-	echo '<style>
-		#adminmenu {
-			float: left;
-			height: auto;
-		}
-		.wp-admin-name, .wp-has-submenu, .wp-has-current-submenu, .wp-menu-open, .menu-top, .menu-icon-media {
-			height: auto;
-		}
-		.wp-first-item, .current, .wp-first-item a, .current a {
-			height: auto;
-		} 
-	</style>';
-}
-
 // Post Type: Banners
 add_action('init', 'type_post_banners');
  
@@ -220,7 +202,7 @@ function equipe_ocupacao() {
 function equipe_biografia() {
 	global $post;
 	$equipe_biografia_value = get_post_meta($post->ID, 'equipe_biografia_', true); ?>
-<textarea rows="5" name="equipe_biografia_" style="width:100%;" maxlength="400" required><?php echo $equipe_biografia_value; ?></textarea>
+<textarea rows="5" name="equipe_biografia_" style="width:100%;" maxlength="170" required><?php echo $equipe_biografia_value; ?></textarea>
 <?php }
 
 function equipe_email() {

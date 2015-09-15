@@ -1,0 +1,51 @@
+@import 'attr.scss';
+@import 'fonts.scss';
+
+// PLACEHOLDERS
+
+%skype-default {
+	img {
+		display: none !important;
+	}
+
+	.skype_c2c_text_span:hover {
+		text-decoration: none !important;
+	}
+}
+
+// MIXIN
+
+@mixin skype-sucks($familia, $cor, $cor-hover, $weight) {
+	.skype_c2c_text_span {
+		font-family: $familia !important;
+		font-weight: $weight !important;
+		color: $cor !important;
+	}
+
+	.skype_c2c_text_span:hover {
+		color: $cor-hover !important;
+	}
+}
+
+//
+
+.content-block {
+	.skype_c2c_textarea_span {
+		@extend %skype-default;
+		@include skype-sucks($varela, $cinza, $laranjaescuro, bold);
+	}
+}
+
+.orange-block {
+	.skype_c2c_textarea_span {
+		@extend %skype-default;
+		@include skype-sucks($varela, $branco, $laranjaescuro, bold);
+	}
+}
+
+.footer-item {
+	.skype_c2c_textarea_span {
+		@extend %skype-default;
+		@include skype-sucks($opensans, $branco, $azulclaro, normal);
+	}
+}

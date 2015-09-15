@@ -1,7 +1,7 @@
 @import 'attr.scss';
 @import 'button.scss';
 
-$menu-break : 820px;
+$menu-break : 840px;
 
 /* MAIN MENU */
 
@@ -66,6 +66,10 @@ $menu-break : 820px;
 		display: inline;
 		margin-right: 30px;
 		color: $branco;
+
+		@media only screen and (max-width: $screen-md-min) {
+			margin-right: 15px;
+		}
 	}
 
 	h2:hover {

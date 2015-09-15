@@ -63,7 +63,7 @@ h4 {
 	@include font(1.8em, $branco);
 }
 
-p, input {
+p, input, textarea {
 	font-family: $opensans;
 	@extend %smallFonts;
 	@include font(1.5em, $cinza);
@@ -75,8 +75,8 @@ footer p {
 }
 
 #buttons h2 {
-	@include font(1.2em, $branco);
-	@include responsiveFonts(1.2em, 1.5em);
+	@include font(1.5em, $branco);
+	@include responsiveFonts(1.5em, 1.5em);
 }
 
 #cta-index h1 {
@@ -87,11 +87,21 @@ footer p {
 	ul, li {
 		font-family: $opensans;
 		@include font(2.1rem, $branco);
-		@include responsiveFonts(1rem, 1rem);
+		@include responsiveFonts(1.8rem, 1.8rem);
 	}
 }
 
 .banner h1 {
 	@include font(3rem, $branco);
 	@include responsiveFonts(2.4rem, 1.2rem);
+}
+
+.minor-text {
+	@include font(1.2rem, $branco);
+	@include responsiveFonts(1rem, 1rem);
+}
+
+.major-text {
+	@include font(2.4rem, $cinza);
+	@include responsiveFonts(2rem, 2rem);
 }

@@ -7,7 +7,7 @@
   z-index: 1;
   padding: 30px;
   background-color: #266ab8; }
-  @media only screen and (max-width: 820px) {
+  @media only screen and (max-width: 840px) {
     #main-menu {
       z-index: 2;
       height: 80px;
@@ -37,7 +37,7 @@
     color: #2ba7e7; }
   #list :active {
     color: #1c4d83; }
-  @media only screen and (max-width: 820px) {
+  @media only screen and (max-width: 840px) {
     #list {
       display: inline-block; } }
 
@@ -49,11 +49,14 @@
     display: inline;
     margin-right: 30px;
     color: #FFF; }
+    @media only screen and (max-width: 992px) {
+      #buttons h2 {
+        margin-right: 15px; } }
   #buttons h2:hover {
     color: #2ba7e7; }
   #buttons h2:active {
     color: #1c4d83; }
-  @media only screen and (max-width: 820px) {
+  @media only screen and (max-width: 840px) {
     #buttons {
       background-color: #434343;
       float: left;

@@ -4,10 +4,10 @@ h1, h2, button, h3, label, h4 {
   font-weight: bold; }
 
 @media only screen and (max-width: 992px) {
-  h2, button, h3, label, h4, p, input {
+  h2, button, h3, label, h4, p, input, textarea {
     font-size: 1.5em; } }
 @media screen and (max-width: 768px) {
-  h2, button, h3, label, h4, p, input {
+  h2, button, h3, label, h4, p, input, textarea {
     font-size: 1.5em; } }
 
 h1 {
@@ -32,7 +32,7 @@ h4 {
   font-size: 1.8em;
   color: #FFF; }
 
-p, input {
+p, input, textarea {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   color: #727272; }
@@ -48,11 +48,11 @@ footer p {
       font-size: 1.5em; } }
 
 #buttons h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #FFF; }
   @media only screen and (max-width: 992px) {
     #buttons h2 {
-      font-size: 1.2em; } }
+      font-size: 1.5em; } }
   @media screen and (max-width: 768px) {
     #buttons h2 {
       font-size: 1.5em; } }
@@ -67,10 +67,10 @@ footer p {
   color: #FFF; }
   @media only screen and (max-width: 992px) {
     .blue-block ul, .blue-block li {
-      font-size: 1rem; } }
+      font-size: 1.8rem; } }
   @media screen and (max-width: 768px) {
     .blue-block ul, .blue-block li {
-      font-size: 1rem; } }
+      font-size: 1.8rem; } }
 
 .banner h1 {
   font-size: 3rem;
@@ -81,5 +81,25 @@ footer p {
   @media screen and (max-width: 768px) {
     .banner h1 {
       font-size: 1.2rem; } }
+
+.minor-text {
+  font-size: 1.2rem;
+  color: #FFF; }
+  @media only screen and (max-width: 992px) {
+    .minor-text {
+      font-size: 1rem; } }
+  @media screen and (max-width: 768px) {
+    .minor-text {
+      font-size: 1rem; } }
+
+.major-text {
+  font-size: 2.4rem;
+  color: #727272; }
+  @media only screen and (max-width: 992px) {
+    .major-text {
+      font-size: 2rem; } }
+  @media screen and (max-width: 768px) {
+    .major-text {
+      font-size: 2rem; } }
 
 /*# sourceMappingURL=fonts.css.map */

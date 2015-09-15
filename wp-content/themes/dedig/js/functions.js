@@ -4,6 +4,7 @@ var w = window.innerWidth;
 
 var contentBlocks = document.querySelectorAll('.content-block');
 var textBlocks = document.querySelectorAll('.text-block');
+var imgBlocks = document.querySelectorAll('.img-block');
 
 function verticalFix() {
 	for (var i = 0; i < contentBlocks.length; i++) {

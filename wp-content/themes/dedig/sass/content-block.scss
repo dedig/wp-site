@@ -123,8 +123,8 @@
 .orange-block {
 	background-color: $laranja;
 
-	h1, h2, h3, label, h4 a, p {
-		color: $branco;
+	h1, h2, h3, label, h4, h4 a, p {
+		color: $branco !important;
 	}
 
 	h4 a:hover {
@@ -148,6 +148,10 @@
 	ul, li {
 		padding: 15px;
 		list-style: disc;
+
+		@media screen and (max-width: $screen-sm-min) {
+			text-align: left;
+		}
 	}
 }
 
@@ -197,11 +201,12 @@
 }
 
 .equipe {
-	height: 500px;
+	height: 600px;
 	margin-bottom: 20px;
 
 	img {
 		width: 100%;
+		height: auto;
 
 		@media only screen and (max-width: $screen-sm-min) {
 			width: 80%;
@@ -217,7 +222,7 @@
 	}
 
 	@media only screen and (max-width: $screen-md-min) {
-		height: 540px;
+		height: 630px;
 	}
 }
 
@@ -237,5 +242,11 @@
 			width: 90%;
 			margin-left: 5%;
 		}
+	}
+}
+
+.img-block {
+	@media only screen and (max-width: $screen-md-min) {
+		padding-top: 60px;
 	}
 }
