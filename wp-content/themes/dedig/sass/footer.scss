@@ -33,7 +33,7 @@
 		color: $azulclaro;
 	}
 
-	@media only screen and (max-width: $screen-sm-min) {
+	@media only screen and (max-width: $screen-sm-max) {
 		.footer-item {
 			text-align: center;
 		}
@@ -42,8 +42,8 @@
 
 #logo-footer {
 	width: 70%;
-
-	@media only screen and (max-width: $screen-sm-min) {
+	
+	@media only screen and (max-width: $screen-sm-max) {
 		width: auto;
 	}
 

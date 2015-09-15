@@ -52,10 +52,10 @@ footer p {
   color: #FFF; }
   @media only screen and (max-width: 992px) {
     #buttons h2 {
-      font-size: 1.5em; } }
+      font-size: 1.3em; } }
   @media screen and (max-width: 768px) {
     #buttons h2 {
-      font-size: 1.5em; } }
+      font-size: 1.2em; } }
 
 #cta-index h1 {
   font-size: 2em;

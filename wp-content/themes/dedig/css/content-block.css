@@ -1,16 +1,16 @@
-#cta-index button, #entrar button {
+#cta-index button, #video-dedig button, #entrar button {
   font-weight: normal;
   border-radius: 5px;
   border-bottom-style: solid;
   border-bottom-width: 2px;
   padding: 20px; }
 
-#cta-index button:active, #entrar button:active {
+#cta-index button:active, #video-dedig button:active, #entrar button:active {
   margin-top: 3px;
   padding-bottom: 19px;
   border: none; }
 
-#cta-index button:focus, #entrar button:focus {
+#cta-index button:focus, #video-dedig button:focus, #entrar button:focus {
   outline: none; }
 
 /* FOOTER */
@@ -26,13 +26,13 @@
     padding-left: 0; }
   #footer-menu a p:hover, #footer-menu a:hover {
     color: #2ba7e7; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     #footer-menu .footer-item {
       text-align: center; } }
 
 #logo-footer {
   width: 70%; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     #logo-footer {
       width: auto; } }
   @media only screen and (max-width: 480px) {
@@ -100,59 +100,66 @@
 .onda-laranja-bottom {
   background-image: url("img/onda-laranja-bottom.svg"); }
 
-#cta-index {
-  text-align: center;
+#cta-index, #video-dedig {
+  text-align: center !important;
   width: 100%;
   height: auto;
   display: block;
   z-index: 0; }
-  #cta-index #img-cta-index-bg {
+  #cta-index #img-cta-index-bg, #video-dedig #img-cta-index-bg {
     width: 100% !important;
     margin: 0 !important;
     position: absolute;
     left: 0;
     z-index: -1; }
-  #cta-index h1 {
+  #cta-index h1, #video-dedig h1 {
     margin-bottom: 30px;
     width: 100%; }
-  #cta-index button {
+  #cta-index button, #video-dedig button {
     color: #fff;
     background-color: #e07b4d;
     border-color: #c05527; }
-  #cta-index button:hover {
+  #cta-index button:hover, #video-dedig button:hover {
     background-color: #f1a581;
     border-color: #e07b4d; }
-  #cta-index button:active {
+  #cta-index button:active, #video-dedig button:active {
     background-color: #e07b4d; }
-  #cta-index button {
+  #cta-index button, #video-dedig button {
     margin-bottom: 30px; }
-  #cta-index img, #cta-index video, #cta-index iframe {
-    width: 50%;
+  #cta-index img, #cta-index video, #cta-index iframe, #video-dedig img, #video-dedig video, #video-dedig iframe {
+    width: 80%;
     height: auto;
-    min-height: 337.5px;
-    margin: 0 25% 30px;
+    min-height: 540px;
+    margin: 0 10% 30px;
     cursor: pointer; }
     @media only screen and (max-width: 992px) {
-      #cta-index img, #cta-index video, #cta-index iframe {
+      #cta-index img, #cta-index video, #cta-index iframe, #video-dedig img, #video-dedig video, #video-dedig iframe {
         width: 70%;
         margin: 0 15% 30px; } }
     @media only screen and (max-width: 768px) {
-      #cta-index img, #cta-index video, #cta-index iframe {
+      #cta-index img, #cta-index video, #cta-index iframe, #video-dedig img, #video-dedig video, #video-dedig iframe {
         width: 80%;
         margin: 0 10% 30px;
         min-height: 345.6px; } }
     @media only screen and (max-width: 480px) {
-      #cta-index img, #cta-index video, #cta-index iframe {
+      #cta-index img, #cta-index video, #cta-index iframe, #video-dedig img, #video-dedig video, #video-dedig iframe {
         min-height: 216px; } }
     @media only screen and (max-width: 300px) {
-      #cta-index img, #cta-index video, #cta-index iframe {
+      #cta-index img, #cta-index video, #cta-index iframe, #video-dedig img, #video-dedig video, #video-dedig iframe {
         min-height: 135px; } }
+
+#video-dedig img, #video-dedig video, #video-dedig iframe {
+  border: 10px solid #000;
+  background-color: #000; }
 
 .content-block {
   padding-top: 30px;
   padding-bottom: 30px; }
   .content-block .text-block {
-    text-align: left; }
+    text-align: left !important; }
+    @media only screen and (max-width: 767px) {
+      .content-block .text-block {
+        text-align: center !important; } }
   .content-block img {
     width: 100%;
     max-width: 360px; }
@@ -160,9 +167,6 @@
     color: #727272; }
   .content-block h4 a:hover {
     color: #c05527; }
-  @media only screen and (max-width: 768px) {
-    .content-block .text-block {
-      text-align: center; } }
 
 .sub-block {
   padding-top: 0px !important; }
@@ -172,7 +176,7 @@
   .orange-block h1, .orange-block h2, .orange-block h3, .orange-block label, .orange-block h4, .orange-block h4 a, .orange-block p {
     color: #FFF !important; }
   .orange-block h4 a:hover {
-    color: #c05527; }
+    color: #c05527 !important; }
   @media only screen and (max-width: 768px) {
     .orange-block .text-block {
       text-align: center; } }
@@ -263,40 +267,37 @@
   .equipe img {
     width: 100%;
     height: auto; }
-    @media only screen and (max-width: 768px) {
-      .equipe img {
-        width: 80%; } }
-    @media only screen and (max-width: 480px) {
-      .equipe img {
-        width: 100%; } }
   .equipe .equipe-block {
     border-bottom: 1px solid #c0c0c0; }
   @media only screen and (max-width: 992px) {
     .equipe {
       height: 630px; } }
+  @media only screen and (max-width: 767px) {
+    .equipe {
+      width: 60%;
+      margin-left: 20%; } }
+  @media only screen and (max-width: 550px) {
+    .equipe {
+      width: 100%;
+      margin-left: 0; } }
 
 #erro404 {
   height: 600px;
   padding-top: 280px; }
 
-#entrar {
-  margin: 30px 0; }
-  #entrar button {
-    color: #fff;
-    background-color: #e07b4d;
-    border-color: #c05527; }
-  #entrar button:hover {
-    background-color: #f1a581;
-    border-color: #e07b4d; }
-  #entrar button:active {
-    background-color: #e07b4d; }
-  #entrar button {
-    width: 33.3%;
-    margin-left: 66.6%; }
-    @media only screen and (max-width: 768px) {
-      #entrar button {
-        width: 90%;
-        margin-left: 5%; } }
+#entrar button {
+  color: #fff;
+  background-color: #266ab8;
+  border-color: #1c4d83; }
+#entrar button:hover {
+  background-color: #2ba7e7;
+  border-color: #266ab8; }
+#entrar button:active {
+  background-color: #266ab8; }
+#entrar p {
+  text-align: right; }
+#entrar button {
+  float: right; }
 
 @media only screen and (max-width: 992px) {
   .img-block {

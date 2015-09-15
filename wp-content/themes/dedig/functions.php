@@ -242,3 +242,4 @@ function save_equipe_post(){
 }
 
 $sessao = ['', '', '', '', ''];
+$isIndex = False;

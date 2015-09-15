@@ -76,7 +76,7 @@ footer p {
 
 #buttons h2 {
 	@include font(1.5em, $branco);
-	@include responsiveFonts(1.5em, 1.5em);
+	@include responsiveFonts(1.3em, 1.2em);
 }
 
 #cta-index h1 {

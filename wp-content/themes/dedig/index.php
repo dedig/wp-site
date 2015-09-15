@@ -1,5 +1,8 @@
-<?php $sessao[0] = 'style="color:#FDA309;"';
-get_header(); ?>
+<?php
+	$sessao[0] = 'style="color:#FDA309;"';
+	$isIndex = True;
+	get_header();
+?>
 	<div id="slider">
 		<nav id="slidesContainer">
 			<?php 
@@ -67,16 +70,15 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="onda-laranja-top fluid"></div>
-			<div class="row content-block orange-block fluid">
-				<div id="cta-index" class="col-sm-12 text-block">
+			<div class="row content-block fluid">
+				<div id="video-dedig" class="col-sm-12 text-block">
 					<h1><?php echo $title4; ?></h1>
-					<iframe src="https://www.youtube.com/embed/g4q8Jhn3YhQ" frameborder="0" allowfullscreen></iframe>
+					<iframe id="yTubeIFrame"></iframe>
 				</div>
 			</div>
-			<div class="onda-laranja-bottom fluid"></div>
 			
-			<div class="row content-block">
+			<div class="onda-laranja-top fluid"></div>
+			<div class="row content-block orange-block fluid">
 				<div class="col-sm-8 text-block">
 					<h1><?php echo $title5; ?></h1>
 					<h4><?php echo $content5; ?></h4>

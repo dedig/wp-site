@@ -34,8 +34,8 @@
 .onda-azul-bottom { @include onda('img/onda-azul-bottom.svg'); }
 .onda-laranja-bottom { @include onda('img/onda-laranja-bottom.svg'); }
 
-#cta-index {
-	text-align: center;
+#cta-index, #video-dedig {
+	text-align: center !important;
 	width: 100%;
 	height: auto;
 	display: block;
@@ -61,10 +61,10 @@
 	}
 
 	img, video, iframe {
-		width: 50%;
+		width: 80%;
 		height: auto;
-		min-height: ((1200px * 0.5) / 16) * 9;
-		margin: 0 25% 30px;
+		min-height: ((1200px * 0.8) / 16) * 9;
+		margin: 0 10% 30px;
 		cursor: pointer;
 
 		@media only screen and (max-width: $screen-md-min) {
@@ -88,12 +88,23 @@
 	}
 }
 
+#video-dedig {
+	img, video, iframe {
+		border: 10px solid $preto;
+		background-color: $preto;
+	}
+}
+
 .content-block {
 	padding-top: 30px;
 	padding-bottom: 30px;
 
 	.text-block {
-		text-align: left;
+		text-align: left !important;
+
+		@media only screen and (max-width: $screen-sm-max) {
+			text-align: center !important;
+		}
 	}
 
 	img {
@@ -107,12 +118,6 @@
 
 	h4 a:hover {
 		color: $laranjaescuro;
-	}
-
-	.text-block {
-		@media only screen and (max-width: $screen-sm-min) {
-			text-align: center;
-		}
 	}
 }
 
@@ -128,7 +133,7 @@
 	}
 
 	h4 a:hover {
-		color: $laranjaescuro;
+		color: $laranjaescuro !important;
 	}
 
 	.text-block {
@@ -207,14 +212,6 @@
 	img {
 		width: 100%;
 		height: auto;
-
-		@media only screen and (max-width: $screen-sm-min) {
-			width: 80%;
-		}
-
-		@media only screen and (max-width: $screen-xs-max) {
-			width: 100%;
-		}
 	}
 
 	.equipe-block {
@@ -224,6 +221,16 @@
 	@media only screen and (max-width: $screen-md-min) {
 		height: 630px;
 	}
+
+	@media only screen and (max-width: $screen-sm-max) {
+		width: 60%;
+		margin-left: 20%;
+	}
+
+	@media only screen and (max-width: 550px) {
+		width: 100%;
+		margin-left: 0;
+	}
 }
 
 #erro404 {
@@ -232,16 +239,14 @@
 }
 
 #entrar {
-	margin: 30px 0;
-	@include btn($laranjaclaro, $laranja, $laranjaescuro);
+	@include btn($azulclaro, $azul, $azulescuro);
+	
+	p {
+		text-align: right;
+	}
+	
 	button {
-		width: 33.3%;
-		margin-left: 66.6%;
-
-		@media only screen and (max-width: $screen-sm-min) {
-			width: 90%;
-			margin-left: 5%;
-		}
+		float: right;
 	}
 }
 

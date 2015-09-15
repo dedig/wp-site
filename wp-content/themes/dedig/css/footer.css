@@ -11,13 +11,13 @@
     padding-left: 0; }
   #footer-menu a p:hover, #footer-menu a:hover {
     color: #2ba7e7; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     #footer-menu .footer-item {
       text-align: center; } }
 
 #logo-footer {
   width: 70%; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     #logo-footer {
       width: auto; } }
   @media only screen and (max-width: 480px) {

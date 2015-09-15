@@ -5,6 +5,7 @@ var w = window.innerWidth;
 var contentBlocks = document.querySelectorAll('.content-block');
 var textBlocks = document.querySelectorAll('.text-block');
 var imgBlocks = document.querySelectorAll('.img-block');
+var iframe = document.getElementById('yTubeIFrame');
 
 function verticalFix() {
 	for (var i = 0; i < contentBlocks.length; i++) {
@@ -18,6 +19,8 @@ function verticalFix() {
 			textBlocks[i].style.paddingTop = '0';
 	}
 }
+
+verticalFix();
 
 // LIST BUTTON
 
@@ -82,6 +85,9 @@ window.onload = function() {
 	menu.style.top = String(marginTop) + 'px';
 	verticalFix();
 	fluidBoxesFix();
+	console.log(iframe);
+	iframe.src = "https://www.youtube.com/embed/g4q8Jhn3YhQ";
+	iframe.frameBorder = 5;
 };
 
 window.onresize = function() {

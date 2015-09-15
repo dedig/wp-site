@@ -1,4 +1,4 @@
-	<div class="onda-azul-top fluid"></div>
+	<div class="onda-azul-top fluid" <?php global $isIndex; if ( $isIndex ): ?>style="background-color:#e07b4d;"<?php endif; ?> ></div>
 	<footer class="row fluid" id="footer-menu">
 		<div class="col-sm-4 footer-item">
 			<a href="#"><img id="logo-footer" alt="Logo Dedig" src="<?php bloginfo('template_directory'); ?>/img/logo-dedig-footer.png" /></a>

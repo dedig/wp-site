@@ -2,12 +2,13 @@
 get_header(); ?>
 	<div class="container">
 		<article>
-			<div class="row" id="entrar">
-				<a href="/index.php/login"><button class="col-sm-12">Acesse nosso sistema</button></a>
+			<div class="row content-block orange-block fluid" id="entrar">
+				<div class="col-sm-12 text-block">
+					<a href="/index.php/login"><button>Fazer Login</button></a>
+				</div>
 			</div>
-			<div class="row">
-				<h1 class="col-md-12">Exibindo: todos</h1>
-			</div>
+			<div class="onda-laranja-bottom fluid"></div>
+
 			<nav class="pagination">
 				<a href="#"><p><<</p></a>
 				<a href="#"><p>...</p></a>
@@ -20,11 +21,14 @@ get_header(); ?>
 				<a href="#"><p>>></p></a>
 			</nav>
 
-			<?php $newsArgs = array( 'post', 'posts_per_page' => -1 );
+			<?php
+				$newsArgs = array( 'post', 'posts_per_page' => -1 );
+
 				$newsLoop = new WP_Query( $newsArgs );
+
 				while ( $newsLoop -> have_posts() ) :
 					$newsLoop -> the_post();
-				?>
+			?>
 
 			<div class="row content-block sub-block post-block">
 				<a href="<?php the_permalink(); ?>">
@@ -44,6 +48,8 @@ get_header(); ?>
 			</div>
 
 			<?php endwhile; ?>
+
+			<!-- <p><?php /*if(function_exists('wp_pagenavi')) { wp_pagenavi(); }*/ ?></p> -->
 
 			<nav class="pagination">
 				<a href="#"><p><<</p></a>
