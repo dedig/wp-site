@@ -6,6 +6,14 @@ add_filter('show_admin_bar', '__return_false');
 // Para exibir a opção de imagem de destaque
 add_theme_support('post-thumbnails'); 
 
+// Correção no wp-admin
+add_action('admin_enqueue_scripts', 'chrome_adminmenu_fix');
+
+function chrome_adminmenu_fix() {
+    if ( strpos( $_SERVER['HTTP_USER_AGENT'], 'Chrome' ) !== false )
+        wp_add_inline_style( 'wp-admin', '#adminmenu { transform: translateZ(0); }' );
+}
+
 // Post Type: Banners
 add_action('init', 'type_post_banners');
  
