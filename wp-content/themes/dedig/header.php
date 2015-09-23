@@ -33,10 +33,10 @@
 			<img src="<?php bloginfo('template_directory'); ?>/img/list.png" alt="Menu" />
 		</div>
 		<nav id="buttons">
-			<a href="/"><h2 class="menu-button" <?php global $sessao; echo $sessao[0]; ?> >Home</h2></a>
-			<a href="/sobre"><h2 class="menu-button" <?php echo $sessao[1]; ?> >Quem Somos</h2></a>
-			<a href="/plataforma"><h2 class="menu-button" <?php echo $sessao[2]; ?> >Plataforma</h2></a>
-			<a href="/educadores"><h2 class="menu-button" <?php echo $sessao[3]; ?> >Para os Educadores</h2></a>
-			<a href="/contato"><h2 class="menu-button" <?php echo $sessao[4]; ?> >Contato</h2></a>
+			<a href=""><h2 class="menu-button" <?php global $sessao; echo $sessao[0]; ?> >Home</h2></a>
+			<a href="sobre"><h2 class="menu-button" <?php echo $sessao[1]; ?> >Quem Somos</h2></a>
+			<a href="plataforma"><h2 class="menu-button" <?php echo $sessao[2]; ?> >Plataforma</h2></a>
+			<a href="educadores"><h2 class="menu-button" <?php echo $sessao[3]; ?> >Para os Educadores</h2></a>
+			<a href="contato"><h2 class="menu-button" <?php echo $sessao[4]; ?> >Contato</h2></a>
 		</nav>
 	</header>
