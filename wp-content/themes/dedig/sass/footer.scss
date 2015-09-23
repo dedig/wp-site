@@ -16,11 +16,6 @@
 	background-color: $azul;
 	padding-top: 30px;
 
-	.footer-item {
-		padding-bottom: 30px;
-		text-align: left;
-	}
-
 	p, a {
 	color: $branco;
 	}
@@ -32,11 +27,14 @@
 	a p:hover, a:hover {
 		color: $azulclaro;
 	}
+}
+
+.footer-item {
+	padding-bottom: 30px;
+	text-align: left;
 
 	@media only screen and (max-width: $screen-sm-max) {
-		.footer-item {
-			text-align: center;
-		}
+		text-align: center;
 	}
 }
 

@@ -2,8 +2,7 @@
   font-weight: normal;
   border-radius: 5px;
   border-bottom-style: solid;
-  border-bottom-width: 2px;
-  padding: 20px; }
+  border-bottom-width: 2px; }
 
 .form input[type=submit]:active {
   margin-top: 3px;
@@ -29,12 +28,14 @@
   .form input[type=submit] {
     color: #fff;
     background-color: #266ab8;
-    border-color: #1c4d83; }
+    border-color: #1c4d83;
+    padding: 20px; }
   .form input[type=submit]:hover {
     background-color: #2ba7e7;
     border-color: #266ab8; }
   .form input[type=submit]:active {
-    background-color: #266ab8; }
+    background-color: #266ab8;
+    padding: 20px 20px 19px !important; }
   @media only screen and (max-width: 992px) {
     .form {
       padding: 50px 0 0; } }

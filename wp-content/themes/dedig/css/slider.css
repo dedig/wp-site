@@ -16,8 +16,8 @@
     width: 100%;
     height: auto; }
   .banner h1 {
-    height: 60px;
-    margin-top: -60px;
+    height: 70px;
+    margin-top: -70px;
     color: #FFF;
     z-index: 1;
     width: 100%;
@@ -31,8 +31,7 @@
     @media only screen and (max-width: 768px) {
       .banner h1 {
         width: 100%;
-        padding-left: 30px;
-        text-align: left; } }
+        padding-left: 30px; } }
 
 #bar {
   width: 100%;

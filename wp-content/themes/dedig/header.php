@@ -17,11 +17,8 @@
 	<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/img/logo-favicon.png">
 	
 	<!-- TEMPORARIO -->
-	<link href='<?php bloginfo('template_directory'); ?>/fonts/open-sans.css' rel='stylesheet' type='text/css'>
-	<link href='<?php bloginfo('template_directory'); ?>/fonts/varela-round.css' rel='stylesheet' type='text/css'>
-	<!-- ONLINE VERSION
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'> -->
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
@@ -36,10 +33,10 @@
 			<img src="<?php bloginfo('template_directory'); ?>/img/list.png" alt="Menu" />
 		</div>
 		<nav id="buttons">
-			<a href="/index.php/"><h2 class="menu-button" <?php global $sessao; echo $sessao[0]; ?> >Home</h2></a>
-			<a href="/index.php/sobre"><h2 class="menu-button" <?php echo $sessao[1]; ?> >Quem Somos</h2></a>
-			<a href="/index.php/plataforma"><h2 class="menu-button" <?php echo $sessao[2]; ?> >Plataforma</h2></a>
-			<a href="/index.php/educadores"><h2 class="menu-button" <?php echo $sessao[3]; ?> >Para os Educadores</h2></a>
-			<a href="/index.php/contato"><h2 class="menu-button" <?php echo $sessao[4]; ?> >Contato</h2></a>
+			<a href="/"><h2 class="menu-button" <?php global $sessao; echo $sessao[0]; ?> >Home</h2></a>
+			<a href="/sobre"><h2 class="menu-button" <?php echo $sessao[1]; ?> >Quem Somos</h2></a>
+			<a href="/plataforma"><h2 class="menu-button" <?php echo $sessao[2]; ?> >Plataforma</h2></a>
+			<a href="/educadores"><h2 class="menu-button" <?php echo $sessao[3]; ?> >Para os Educadores</h2></a>
+			<a href="/contato"><h2 class="menu-button" <?php echo $sessao[4]; ?> >Contato</h2></a>
 		</nav>
 	</header>

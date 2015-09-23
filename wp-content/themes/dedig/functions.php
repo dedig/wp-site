@@ -210,7 +210,7 @@ function equipe_ocupacao() {
 function equipe_biografia() {
 	global $post;
 	$equipe_biografia_value = get_post_meta($post->ID, 'equipe_biografia_', true); ?>
-<textarea rows="5" name="equipe_biografia_" style="width:100%;" maxlength="170" required><?php echo $equipe_biografia_value; ?></textarea>
+<textarea rows="5" name="equipe_biografia_" style="width:100%;" required><?php echo $equipe_biografia_value; ?></textarea>
 <?php }
 
 function equipe_email() {

@@ -2,17 +2,18 @@
 #footer-menu {
   background-color: #266ab8;
   padding-top: 30px; }
-  #footer-menu .footer-item {
-    padding-bottom: 30px;
-    text-align: left; }
   #footer-menu p, #footer-menu a {
     color: #FFF; }
   #footer-menu ul {
     padding-left: 0; }
   #footer-menu a p:hover, #footer-menu a:hover {
     color: #2ba7e7; }
+
+.footer-item {
+  padding-bottom: 30px;
+  text-align: left; }
   @media only screen and (max-width: 767px) {
-    #footer-menu .footer-item {
+    .footer-item {
       text-align: center; } }
 
 #logo-footer {

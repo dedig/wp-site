@@ -30,7 +30,8 @@
 			<?php endif; endwhile; ?>
 		</ul>
 		<h1>Descubra a sala Dedig!</h1>
-		<a href="#"><button>Clique e descubra!</button></a>
+		<a href="#" id="jogoBtn"><button>Tenho cadastro</button></a><br/>
+		<a href="#" id="tryBtn"><button>Não tenho cadastro</button></a>
 	</div>
 	
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/slider.js"></script>

@@ -1,16 +1,15 @@
-#cta-index button, #video-dedig button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
+#jogoBtn button, #tryBtn button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
   font-weight: normal;
   border-radius: 5px;
   border-bottom-style: solid;
-  border-bottom-width: 2px;
-  padding: 20px; }
+  border-bottom-width: 2px; }
 
-#cta-index button:active, #video-dedig button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
+#jogoBtn button:active, #tryBtn button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
   margin-top: 3px;
   padding-bottom: 19px;
   border: none; }
 
-#cta-index button:focus, #video-dedig button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
+#jogoBtn button:focus, #tryBtn button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
   outline: none; }
 
 /* FONTS */
@@ -95,7 +94,7 @@ footer p {
       font-size: 2.4rem; } }
   @media screen and (max-width: 768px) {
     .banner h1 {
-      font-size: 1.2rem; } }
+      font-size: 2rem; } }
 
 .minor-text {
   font-size: 1.2rem;
@@ -139,19 +138,18 @@ a:hover, a:focus, a:active {
   text-decoration: none;
   outline: none; }
 
-#cta-index button, #video-dedig button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
+#jogoBtn button, #tryBtn button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
   font-weight: normal;
   border-radius: 5px;
   border-bottom-style: solid;
-  border-bottom-width: 2px;
-  padding: 20px; }
+  border-bottom-width: 2px; }
 
-#cta-index button:active, #video-dedig button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
+#jogoBtn button:active, #tryBtn button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
   margin-top: 3px;
   padding-bottom: 19px;
   border: none; }
 
-#cta-index button:focus, #video-dedig button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
+#jogoBtn button:focus, #tryBtn button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
   outline: none; }
 
 /* MAIN MENU */
@@ -247,8 +245,8 @@ a:hover, a:focus, a:active {
     width: 100%;
     height: auto; }
   .banner h1 {
-    height: 60px;
-    margin-top: -60px;
+    height: 70px;
+    margin-top: -70px;
     color: #FFF;
     z-index: 1;
     width: 100%;
@@ -262,8 +260,7 @@ a:hover, a:focus, a:active {
     @media only screen and (max-width: 768px) {
       .banner h1 {
         width: 100%;
-        padding-left: 30px;
-        text-align: left; } }
+        padding-left: 30px; } }
 
 #bar {
   width: 100%;
@@ -288,36 +285,36 @@ a:hover, a:focus, a:active {
   margin-right: 10px;
   border-radius: 7px; }
 
-#cta-index button, #video-dedig button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
+#jogoBtn button, #tryBtn button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
   font-weight: normal;
   border-radius: 5px;
   border-bottom-style: solid;
-  border-bottom-width: 2px;
-  padding: 20px; }
+  border-bottom-width: 2px; }
 
-#cta-index button:active, #video-dedig button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
+#jogoBtn button:active, #tryBtn button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
   margin-top: 3px;
   padding-bottom: 19px;
   border: none; }
 
-#cta-index button:focus, #video-dedig button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
+#jogoBtn button:focus, #tryBtn button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
   outline: none; }
 
 /* FOOTER */
 #footer-menu {
   background-color: #266ab8;
   padding-top: 30px; }
-  #footer-menu .footer-item {
-    padding-bottom: 30px;
-    text-align: left; }
   #footer-menu p, #footer-menu a {
     color: #FFF; }
   #footer-menu ul {
     padding-left: 0; }
   #footer-menu a p:hover, #footer-menu a:hover {
     color: #2ba7e7; }
+
+.footer-item {
+  padding-bottom: 30px;
+  text-align: left; }
   @media only screen and (max-width: 767px) {
-    #footer-menu .footer-item {
+    .footer-item {
       text-align: center; } }
 
 #logo-footer {
@@ -396,26 +393,11 @@ a:hover, a:focus, a:active {
   height: auto;
   display: block;
   z-index: 0; }
-  #cta-index #img-cta-index-bg, #video-dedig #img-cta-index-bg {
-    width: 100% !important;
-    margin: 0 !important;
-    position: absolute;
-    left: 0;
-    z-index: -1; }
   #cta-index h1, #video-dedig h1 {
+    margin-top: 100px;
     margin-bottom: 30px;
-    width: 100%; }
-  #cta-index button, #video-dedig button {
-    color: #fff;
-    background-color: #e07b4d;
-    border-color: #c05527; }
-  #cta-index button:hover, #video-dedig button:hover {
-    background-color: #f1a581;
-    border-color: #e07b4d; }
-  #cta-index button:active, #video-dedig button:active {
-    background-color: #e07b4d; }
-  #cta-index button, #video-dedig button {
-    margin-bottom: 30px; }
+    width: 100%;
+    font-size: 3em !important; }
   #cta-index img, #cta-index video, #cta-index iframe, #video-dedig img, #video-dedig video, #video-dedig iframe {
     width: 80%;
     height: auto;
@@ -437,6 +419,42 @@ a:hover, a:focus, a:active {
     @media only screen and (max-width: 300px) {
       #cta-index img, #cta-index video, #cta-index iframe, #video-dedig img, #video-dedig video, #video-dedig iframe {
         min-height: 135px; } }
+
+#jogoBtn button {
+  color: #fff;
+  background-color: #e07b4d;
+  border-color: #c05527;
+  padding: 20px; }
+#jogoBtn button:hover {
+  background-color: #f1a581;
+  border-color: #e07b4d; }
+#jogoBtn button:active {
+  background-color: #e07b4d;
+  padding: 20px 20px 19px !important; }
+#jogoBtn button {
+  margin-bottom: 30px; }
+
+#tryBtn button {
+  color: #fff;
+  background-color: #266ab8;
+  border-color: #1c4d83;
+  padding: 15px; }
+#tryBtn button:hover {
+  background-color: #2ba7e7;
+  border-color: #266ab8; }
+#tryBtn button:active {
+  background-color: #266ab8;
+  padding: 15px 15px 14px !important; }
+#tryBtn button {
+  margin-bottom: 30px;
+  font-size: 1.2em; }
+
+#img-cta-index-bg {
+  width: 100% !important;
+  margin: 0 !important;
+  position: absolute;
+  left: 0;
+  z-index: -1; }
 
 #video-dedig img, #video-dedig video, #video-dedig iframe {
   border: 10px solid #000;
@@ -545,7 +563,7 @@ a:hover, a:focus, a:active {
   height: 310px; }
   @media only screen and (max-width: 992px) {
     .personagem-bio {
-      height: 380px; } }
+      height: 450px; } }
   @media only screen and (max-width: 768px) {
     .personagem-bio {
       text-align: center;
@@ -557,8 +575,6 @@ a:hover, a:focus, a:active {
   .equipe img {
     width: 100%;
     height: auto; }
-  .equipe .equipe-block {
-    border-bottom: 1px solid #c0c0c0; }
   @media only screen and (max-width: 992px) {
     .equipe {
       height: 630px; } }
@@ -571,6 +587,9 @@ a:hover, a:focus, a:active {
       width: 100%;
       margin-left: 0; } }
 
+.equipe-block {
+  border-bottom: 1px solid #c0c0c0; }
+
 #erro404 {
   height: 600px;
   padding-top: 280px; }
@@ -578,12 +597,14 @@ a:hover, a:focus, a:active {
 #entrar button {
   color: #fff;
   background-color: #266ab8;
-  border-color: #1c4d83; }
+  border-color: #1c4d83;
+  padding: 20px; }
 #entrar button:hover {
   background-color: #2ba7e7;
   border-color: #266ab8; }
 #entrar button:active {
-  background-color: #266ab8; }
+  background-color: #266ab8;
+  padding: 20px 20px 19px !important; }
 #entrar p {
   text-align: right; }
 #entrar button {
@@ -625,9 +646,6 @@ a:hover, a:focus, a:active {
   text-align: left;
   border-right: solid 1px #ddd;
   margin: 30px 0; }
-  .post #capa img {
-    width: 100%;
-    height: auto; }
   .post img {
     margin: 30px 0;
     height: auto; }
@@ -637,6 +655,10 @@ a:hover, a:focus, a:active {
       padding-bottom: 10px;
       border-right: none;
       border-bottom: solid 1px #ddd; } }
+
+#capa img {
+  width: 100%;
+  height: auto; }
 
 .recomendacoes {
   text-align: left; }
@@ -655,17 +677,18 @@ a:hover, a:focus, a:active {
 #footer-menu {
   background-color: #266ab8;
   padding-top: 30px; }
-  #footer-menu .footer-item {
-    padding-bottom: 30px;
-    text-align: left; }
   #footer-menu p, #footer-menu a {
     color: #FFF; }
   #footer-menu ul {
     padding-left: 0; }
   #footer-menu a p:hover, #footer-menu a:hover {
     color: #2ba7e7; }
+
+.footer-item {
+  padding-bottom: 30px;
+  text-align: left; }
   @media only screen and (max-width: 767px) {
-    #footer-menu .footer-item {
+    .footer-item {
       text-align: center; } }
 
 #logo-footer {
@@ -726,12 +749,6 @@ a:hover, a:focus, a:active {
     float: left; }
     .pagination a p {
       margin: 0; }
-  .pagination .current {
-    background-color: #e07b4d; }
-    .pagination .current p {
-      color: #FFF; }
-  .pagination .current:hover, .pagination .current:active {
-    background-color: #c05527; }
   .pagination a:hover {
     background-color: #266ab8; }
     .pagination a:hover p, .pagination a:hover strong {
@@ -755,19 +772,26 @@ a:hover, a:focus, a:active {
     .pagination {
       padding: 10px 12%; } }
 
-#cta-index button, #video-dedig button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
+.current {
+  background-color: #e07b4d; }
+  .current p {
+    color: #FFF; }
+
+.current:hover, .current:active {
+  background-color: #c05527; }
+
+#jogoBtn button, #tryBtn button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
   font-weight: normal;
   border-radius: 5px;
   border-bottom-style: solid;
-  border-bottom-width: 2px;
-  padding: 20px; }
+  border-bottom-width: 2px; }
 
-#cta-index button:active, #video-dedig button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
+#jogoBtn button:active, #tryBtn button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
   margin-top: 3px;
   padding-bottom: 19px;
   border: none; }
 
-#cta-index button:focus, #video-dedig button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
+#jogoBtn button:focus, #tryBtn button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
   outline: none; }
 
 .form {
@@ -786,12 +810,14 @@ a:hover, a:focus, a:active {
   .form input[type=submit] {
     color: #fff;
     background-color: #266ab8;
-    border-color: #1c4d83; }
+    border-color: #1c4d83;
+    padding: 20px; }
   .form input[type=submit]:hover {
     background-color: #2ba7e7;
     border-color: #266ab8; }
   .form input[type=submit]:active {
-    background-color: #266ab8; }
+    background-color: #266ab8;
+    padding: 20px 20px 19px !important; }
   @media only screen and (max-width: 992px) {
     .form {
       padding: 50px 0 0; } }
@@ -811,19 +837,18 @@ a:hover, a:focus, a:active {
     #contato-sidebar {
       padding: 50px 0; } }
 
-#cta-index button, #video-dedig button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
+#jogoBtn button, #tryBtn button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
   font-weight: normal;
   border-radius: 5px;
   border-bottom-style: solid;
-  border-bottom-width: 2px;
-  padding: 20px; }
+  border-bottom-width: 2px; }
 
-#cta-index button:active, #video-dedig button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
+#jogoBtn button:active, #tryBtn button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
   margin-top: 3px;
   padding-bottom: 19px;
   border: none; }
 
-#cta-index button:focus, #video-dedig button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
+#jogoBtn button:focus, #tryBtn button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
   outline: none; }
 
 .login {
@@ -868,12 +893,14 @@ a:hover, a:focus, a:active {
   .login-box input[type=submit] {
     color: #fff;
     background-color: #e07b4d;
-    border-color: #c05527; }
+    border-color: #c05527;
+    padding: 20px; }
   .login-box input[type=submit]:hover {
     background-color: #f1a581;
     border-color: #e07b4d; }
   .login-box input[type=submit]:active {
-    background-color: #e07b4d; }
+    background-color: #e07b4d;
+    padding: 20px 20px 19px !important; }
   @media only screen and (max-width: 992px) {
     .login-box {
       width: 90%;
@@ -961,7 +988,7 @@ footer p {
       font-size: 2.4rem; } }
   @media screen and (max-width: 768px) {
     .banner h1 {
-      font-size: 1.2rem; } }
+      font-size: 2rem; } }
 
 .minor-text {
   font-size: 1.2rem;

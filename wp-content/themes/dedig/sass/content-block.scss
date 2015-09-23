@@ -41,23 +41,11 @@
 	display: block;
 	z-index: 0;
 
-	#img-cta-index-bg {
-		width: 100% !important;
-		margin: 0 !important;
-		position: absolute;
-		left: 0;
-		z-index: -1;
-	}
-
 	h1 {
+		margin-top: 100px;
 		margin-bottom: 30px;
 		width: 100%;
-	}
-
-	@include btn($laranjaclaro, $laranja, $laranjaescuro);
-
-	button {
-		margin-bottom: 30px;
+		font-size: 3em !important;
 	}
 
 	img, video, iframe {
@@ -86,6 +74,31 @@
 			min-height: ((300px * 0.8) / 16) * 9;
 		}
 	}
+}
+
+#jogoBtn {
+	@include btn($laranjaclaro, $laranja, $laranjaescuro);
+
+	button {
+		margin-bottom: 30px;
+	}
+}
+
+#tryBtn {
+	@include btn($azulclaro, $azul, $azulescuro, 15px, 15px 15px 14px);
+
+	button {
+		margin-bottom: 30px;
+		font-size: 1.2em;
+	}
+}
+
+#img-cta-index-bg {
+	width: 100% !important;
+	margin: 0 !important;
+	position: absolute;
+	left: 0;
+	z-index: -1;
 }
 
 #video-dedig {
@@ -196,7 +209,7 @@
 	height:310px;
 	
 	@media only screen and (max-width: $screen-md-min) {
-		height: 380px;
+		height: 450px;
 	}
 
 	@media only screen and (max-width: $screen-sm-min) {
@@ -214,10 +227,6 @@
 		height: auto;
 	}
 
-	.equipe-block {
-		border-bottom: 1px solid $cinzaclaro;
-	}
-
 	@media only screen and (max-width: $screen-md-min) {
 		height: 630px;
 	}
@@ -231,6 +240,10 @@
 		width: 100%;
 		margin-left: 0;
 	}
+}
+
+.equipe-block {
+	border-bottom: 1px solid $cinzaclaro;
 }
 
 #erro404 {

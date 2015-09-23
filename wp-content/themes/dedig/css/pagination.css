@@ -11,12 +11,6 @@
     float: left; }
     .pagination a p {
       margin: 0; }
-  .pagination .current {
-    background-color: #e07b4d; }
-    .pagination .current p {
-      color: #FFF; }
-  .pagination .current:hover, .pagination .current:active {
-    background-color: #c05527; }
   .pagination a:hover {
     background-color: #266ab8; }
     .pagination a:hover p, .pagination a:hover strong {
@@ -39,5 +33,13 @@
   @media only screen and (max-width: 480px) {
     .pagination {
       padding: 10px 12%; } }
+
+.current {
+  background-color: #e07b4d; }
+  .current p {
+    color: #FFF; }
+
+.current:hover, .current:active {
+  background-color: #c05527; }
 
 /*# sourceMappingURL=pagination.css.map */

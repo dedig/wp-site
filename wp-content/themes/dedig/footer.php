@@ -6,10 +6,10 @@
 		<div class="col-sm-4 footer-item">
 			<h3>MAPA DO SITE</h3>
 			<ul>
-				<li><a href="/index.php/"><p>Home</p></a></li>
-				<li><a href="/index.php/sobre"><p>Quem somos</p></a></li>
-				<li><a href="/index.php/plataforma"><p>Plataforma</p></a></li>
-				<li><a href="/index.php/educadores"><p>Para os educadores</p></a></li>
+				<li><a href="/"><p>Home</p></a></li>
+				<li><a href="/sobre"><p>Quem somos</p></a></li>
+				<li><a href="/plataforma"><p>Plataforma</p></a></li>
+				<li><a href="/educadores"><p>Para os educadores</p></a></li>
 				<li><a href="#"><p>Descubra a sala Dedig!</p></a></li>
 			</ul>
 		</div>

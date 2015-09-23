@@ -2,8 +2,7 @@
   font-weight: normal;
   border-radius: 5px;
   border-bottom-style: solid;
-  border-bottom-width: 2px;
-  padding: 20px; }
+  border-bottom-width: 2px; }
 
 .login-box input[type=submit]:active {
   margin-top: 3px;
@@ -55,12 +54,14 @@
   .login-box input[type=submit] {
     color: #fff;
     background-color: #e07b4d;
-    border-color: #c05527; }
+    border-color: #c05527;
+    padding: 20px; }
   .login-box input[type=submit]:hover {
     background-color: #f1a581;
     border-color: #e07b4d; }
   .login-box input[type=submit]:active {
-    background-color: #e07b4d; }
+    background-color: #e07b4d;
+    padding: 20px 20px 19px !important; }
   @media only screen and (max-width: 992px) {
     .login-box {
       width: 90%;

@@ -93,7 +93,7 @@ footer p {
 
 .banner h1 {
 	@include font(3rem, $branco);
-	@include responsiveFonts(2.4rem, 1.2rem);
+	@include responsiveFonts(2.4rem, 2rem);
 }
 
 .minor-text {
