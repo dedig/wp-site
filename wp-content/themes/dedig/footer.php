@@ -1,15 +1,15 @@
 	<div class="onda-azul-top fluid" <?php global $isIndex; if ( $isIndex ): ?>style="background-color:#e07b4d;"<?php endif; ?> ></div>
 	<footer class="row fluid" id="footer-menu">
 		<div class="col-sm-4 footer-item">
-			<a href="#"><img id="logo-footer" alt="Logo Dedig" src="<?php bloginfo('template_directory'); ?>/img/logo-dedig-footer.png" /></a>
+			<a href="<?php echo home_url( '/' ); ?>"><img id="logo-footer" alt="Logo Dedig" src="<?php bloginfo('template_directory'); ?>/img/logo-dedig-footer.png" /></a>
 		</div>
 		<div class="col-sm-4 footer-item">
 			<h3>MAPA DO SITE</h3>
 			<ul>
-				<li><a href=""><p>Home</p></a></li>
-				<li><a href="sobre"><p>Quem somos</p></a></li>
-				<li><a href="plataforma"><p>Plataforma</p></a></li>
-				<li><a href="educadores"><p>Para os educadores</p></a></li>
+				<li><a href="<?php echo home_url( '/' ); ?>"><p>Home</p></a></li>
+				<li><a href="<?php echo home_url( '/sobre' ); ?>"><p>Quem somos</p></a></li>
+				<li><a href="<?php echo home_url( '/plataforma' ); ?>"><p>Plataforma</p></a></li>
+				<li><a href="<?php echo home_url( '/educadores' ); ?>"><p>Para os educadores</p></a></li>
 				<li><a href="#"><p>Descubra a sala Dedig!</p></a></li>
 			</ul>
 		</div>
