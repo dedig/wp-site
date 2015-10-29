@@ -31,9 +31,9 @@
 		</div>
 		<nav id="buttons">
 			<a href="<?php echo home_url( '/' ); ?>"><h2 class="menu-button" <?php global $sessao; echo $sessao[0]; ?> >Home</h2></a>
-			<a href="<?php echo home_url( '/sobre' ); ?>"><h2 class="menu-button" <?php echo $sessao[1]; ?> >Quem Somos</h2></a>
-			<a href="<?php echo home_url( '/plataforma' ); ?>"><h2 class="menu-button" <?php echo $sessao[2]; ?> >Plataforma</h2></a>
-			<a href="<?php echo home_url( '/educadores' ); ?>"><h2 class="menu-button" <?php echo $sessao[3]; ?> >Para os Educadores</h2></a>
-			<a href="<?php echo home_url( '/contato' ); ?>"><h2 class="menu-button" <?php echo $sessao[4]; ?> >Contato</h2></a>
+			<a href="<?php echo home_url( '/index.php/sobre' ); ?>"><h2 class="menu-button" <?php echo $sessao[1]; ?> >Quem Somos</h2></a>
+			<a href="<?php echo home_url( '/index.php/plataforma' ); ?>"><h2 class="menu-button" <?php echo $sessao[2]; ?> >Plataforma</h2></a>
+			<a href="<?php echo home_url( '/index.php/educadores' ); ?>"><h2 class="menu-button" <?php echo $sessao[3]; ?> >Para os Educadores</h2></a>
+			<a href="<?php echo home_url( '/index.php/contato' ); ?>"><h2 class="menu-button" <?php echo $sessao[4]; ?> >Contato</h2></a>
 		</nav>
 	</header>
