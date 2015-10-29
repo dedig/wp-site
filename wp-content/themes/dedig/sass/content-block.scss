@@ -6,6 +6,7 @@
 
 %onda-height {
 	height: 40px;
+	display: none;
 
 	@media only screen and (max-width: 1900px) {
 		height: 20px;
@@ -140,6 +141,7 @@
 
 .orange-block {
 	background-color: $laranja;
+	display: none;
 
 	h1, h2, h3, label, h4, h4 a, p {
 		color: $branco !important;
@@ -158,6 +160,7 @@
 
 .blue-block {
 	background-color: $azul;
+	display: none;
 
 	h1, p, ul {
 		color: $branco;

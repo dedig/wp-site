@@ -17,6 +17,7 @@ function verticalFix() {
 		}
 		else
 			textBlocks[i].style.paddingTop = '0';
+		textBlocks[i].style.display = 'block';
 	}
 }
 

@@ -363,7 +363,8 @@ a:hover, a:focus, a:active {
   padding: 15px 0; }
 
 .onda-azul-top, .onda-laranja-top, .onda-azul-bottom, .onda-laranja-bottom {
-  height: 40px; }
+  height: 40px;
+  display: none; }
   @media only screen and (max-width: 1900px) {
     .onda-azul-top, .onda-laranja-top, .onda-azul-bottom, .onda-laranja-bottom {
       height: 20px; } }
@@ -480,7 +481,8 @@ a:hover, a:focus, a:active {
   padding-top: 0px !important; }
 
 .orange-block {
-  background-color: #e07b4d; }
+  background-color: #e07b4d;
+  display: none; }
   .orange-block h1, .orange-block h2, .orange-block h3, .orange-block label, .orange-block h4, .orange-block h4 a, .orange-block p {
     color: #FFF !important; }
   .orange-block h4 a:hover {
@@ -490,7 +492,8 @@ a:hover, a:focus, a:active {
       text-align: center; } }
 
 .blue-block {
-  background-color: #266ab8; }
+  background-color: #266ab8;
+  display: none; }
   .blue-block h1, .blue-block p, .blue-block ul {
     color: #FFF; }
   .blue-block ul, .blue-block li {
