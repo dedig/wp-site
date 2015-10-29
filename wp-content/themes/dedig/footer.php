@@ -7,9 +7,9 @@
 			<h3>MAPA DO SITE</h3>
 			<ul>
 				<li><a href="<?php echo home_url( '/' ); ?>"><p>Home</p></a></li>
-				<li><a href="<?php echo home_url( '/sobre' ); ?>"><p>Quem somos</p></a></li>
-				<li><a href="<?php echo home_url( '/plataforma' ); ?>"><p>Plataforma</p></a></li>
-				<li><a href="<?php echo home_url( '/educadores' ); ?>"><p>Para os educadores</p></a></li>
+				<li><a href="<?php echo home_url( '/index.php/sobre' ); ?>"><p>Quem somos</p></a></li>
+				<li><a href="<?php echo home_url( '/index.php/plataforma' ); ?>"><p>Plataforma</p></a></li>
+				<li><a href="<?php echo home_url( '/index.php/educadores' ); ?>"><p>Para os educadores</p></a></li>
 				<li><a href="#"><p>Descubra a sala Dedig!</p></a></li>
 			</ul>
 		</div>
