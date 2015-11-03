@@ -2,6 +2,8 @@
 sitemap.xml
 sitemap.xml.gz
 *.htaccess
+*.scss
+*.map
 wp-config.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
@@ -14,3 +16,9 @@ wp-content/uploads/
 game/
 jogar/
 wiki/
+wp-content/themes/dedig/node_modules/
+wp-content/themes/dedig/sass/
+wp-content/themes/dedig/js/functions.js
+wp-content/themes/dedig/Gruntfile.js
+wp-content/themes/dedig/package.json
+wp-content/themes/dedig/.sass-cache/
