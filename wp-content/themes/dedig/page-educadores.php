@@ -4,7 +4,7 @@ get_header(); ?>
 		<article>
 			<div class="row content-block orange-block fluid" id="entrar">
 				<div class="col-sm-12 text-block">
-					<a href="http://54.94.234.51"><button>Fazer Login</button></a>
+					<a href="http://54.94.234.51" target="_blank"><button>Fazer Login</button></a>
 				</div>
 			</div>
 			<div class="onda-laranja-bottom fluid"></div>
