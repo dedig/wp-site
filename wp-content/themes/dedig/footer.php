@@ -10,7 +10,6 @@
 				<li><a href="<?php echo home_url( '/index.php/sobre' ); ?>"><p>Quem somos</p></a></li>
 				<li><a href="<?php echo home_url( '/index.php/plataforma' ); ?>"><p>Plataforma</p></a></li>
 				<li><a href="<?php echo home_url( '/index.php/educadores' ); ?>"><p>Para os educadores</p></a></li>
-				<li><a href="#"><p>Descubra a sala Dedig!</p></a></li>
 			</ul>
 		</div>
 		<div class="col-sm-4">
