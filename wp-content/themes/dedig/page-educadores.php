@@ -4,11 +4,12 @@ get_header(); ?>
 		<article>
 			<div class="row content-block orange-block fluid" id="entrar">
 				<div class="col-sm-12 text-block">
-					<a href="/index.php/login"><button>Fazer Login</button></a>
+					<a href="<?php echo home_url( '/index.php/login' ); ?>"><button>Fazer Login</button></a>
 				</div>
 			</div>
 			<div class="onda-laranja-bottom fluid"></div>
 
+			<!--
 			<nav class="pagination">
 				<a href="#"><p><<</p></a>
 				<a href="#"><p>...</p></a>
@@ -19,15 +20,27 @@ get_header(); ?>
 				<a href="#"><p>6</p></a>
 				<a href="#"><p>...</p></a>
 				<a href="#"><p>>></p></a>
-			</nav>
+			</nav> -->
 
 			<?php
 				$newsArgs = array( 'post', 'posts_per_page' => -1 );
 
 				$newsLoop = new WP_Query( $newsArgs );
+				
+				//$count_posts = wp_count_posts();
+				$published_posts = wp_count_posts()->publish;
 
-				while ( $newsLoop -> have_posts() ) :
-					$newsLoop -> the_post();
+				if ( $published_posts == 0 ):
+			?>
+			<div id="no-posts">
+				<p>Em breve postagens informativas para você.</p>
+			</div>
+
+			<?php
+				else:
+
+					while ( $newsLoop -> have_posts() ) :
+						$newsLoop -> the_post();
 			?>
 
 			<div class="row content-block sub-block post-block">
@@ -47,11 +60,11 @@ get_header(); ?>
 				</a>
 			</div>
 
-			<?php endwhile; ?>
+			<?php endwhile; endif; ?>
 
 			<!-- <p><?php /*if(function_exists('wp_pagenavi')) { wp_pagenavi(); }*/ ?></p> -->
 
-			<nav class="pagination">
+			<!-- <nav class="pagination">
 				<a href="#"><p><<</p></a>
 				<a href="#"><p>...</p></a>
 				<a href="#"><p>2</p></a>
@@ -61,6 +74,6 @@ get_header(); ?>
 				<a href="#"><p>6</p></a>
 				<a href="#"><p>...</p></a>
 				<a href="#"><p>>></p></a>
-			</nav>
+			</nav> -->
 		</article>
 <?php get_footer(); ?>
