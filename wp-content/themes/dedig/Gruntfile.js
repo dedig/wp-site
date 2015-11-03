@@ -2,11 +2,10 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     sass: {
-      options: {
-        style: 'expanded'
-      },
-      files: {
-        'style.css': 'style.scss',
+      dist: {
+        files: {
+          'style.css': 'style.scss'
+        }
       }
     }
   });

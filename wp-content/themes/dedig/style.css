@@ -590,7 +590,7 @@ a:hover, a:focus, a:active {
 .equipe-block {
   border-bottom: 1px solid #c0c0c0; }
 
-#erro404 {
+#erro404, #no-posts {
   height: 600px;
   padding-top: 280px; }
 

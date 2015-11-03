@@ -4,7 +4,7 @@ get_header(); ?>
 		<article>
 			<div class="row content-block orange-block fluid" id="entrar">
 				<div class="col-sm-12 text-block">
-					<a href="/index.php/login"><button>Fazer Login</button></a>
+					<a href="<?php echo home_url( '/index.php/login' ); ?>"><button>Fazer Login</button></a>
 				</div>
 			</div>
 			<div class="onda-laranja-bottom fluid"></div>
@@ -33,7 +33,7 @@ get_header(); ?>
 				if ( $published_posts == 0 ):
 			?>
 			<div id="no-posts">
-				<p>Em breve veja postagens informativas aqui.</p>
+				<p>Em breve postagens informativas para você.</p>
 			</div>
 
 			<?php
