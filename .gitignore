@@ -1,7 +1,7 @@
 *.log
 sitemap.xml
 sitemap.xml.gz
-.htaccess
+*.htaccess
 wp-config.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
@@ -14,3 +14,4 @@ wp-content/uploads/
 game/
 jogar/
 wiki/
+wp-content/themes/dedig/node_modules/
