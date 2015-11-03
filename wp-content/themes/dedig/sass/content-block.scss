@@ -4,7 +4,7 @@
 
 // PLACEHOLDERS
 
-%onda-height {
+%onda-default {
 	height: 40px;
 
 	@media only screen and (max-width: 1900px) {
@@ -18,12 +18,14 @@
 	@media only screen and (max-width: $screen-xs-max) {
 		height: 5px;
 	}
+
+	display: none;
 }
 
 // MIXINS
 
 @mixin onda ($bgfile) {
-	@extend %onda-height;
+	@extend %onda-default;
 	background-image: url($bgfile);
 }
 
@@ -139,7 +141,7 @@
 }
 
 .orange-block {
-	background-color: $laranja;
+	/*background-color: $laranja;*/
 
 	h1, h2, h3, label, h4, h4 a, p {
 		color: $branco !important;
@@ -157,7 +159,7 @@
 }
 
 .blue-block {
-	background-color: $azul;
+	/*background-color: $azul;*/
 
 	h1, p, ul {
 		color: $branco;

@@ -7,10 +7,18 @@ module.exports = function(grunt) {
           'style.css': 'style.scss'
         }
       }
+    },
+    uglify: {
+      build: {
+        files: {
+          'js/functions.min.js': 'js/functions.js',
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('default', ['sass']);
+  grunt.registerTask('default', ['sass','uglify']);
 };

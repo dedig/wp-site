@@ -1,5 +1,16 @@
 var w = window.innerWidth;
 
+// ORANGE-SHOW
+
+function showBlocks(el, display, color) {
+	var blocks = document.querySelectorAll(el);
+	for ( var i = 0; i < blocks.length; i++) {
+		blocks[i].style.display = display;
+		if (color != 'undefined')
+			blocks[i].style.backgroundColor = color;
+	}
+}
+
 // VERTICAL-FIX
 
 var contentBlocks = document.querySelectorAll('.content-block');
@@ -18,6 +29,14 @@ function verticalFix() {
 		else
 			textBlocks[i].style.paddingTop = '0';
 	}
+	setTimeout(function(){
+		showBlocks('.orange-block','block','#e07b4d');
+		showBlocks('.blue-block','block','#266ab8');
+		showBlocks('.onda-azul-top','block');
+		showBlocks('.onda-laranja-top','block');
+		showBlocks('.onda-azul-bottom','block');
+		showBlocks('.onda-laranja-bottom','block');
+	}, 10);
 }
 
 verticalFix();
@@ -85,7 +104,6 @@ window.onload = function() {
 	menu.style.top = String(marginTop) + 'px';
 	verticalFix();
 	fluidBoxesFix();
-	console.log(iframe);
 	iframe.src = "https://www.youtube.com/embed/g4q8Jhn3YhQ";
 	iframe.frameBorder = 5;
 };
