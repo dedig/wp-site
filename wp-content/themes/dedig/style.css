@@ -376,6 +376,9 @@ a:hover, a:focus, a:active {
       height: 5px; } }
 
 /* CONTENT */
+#content {
+  min-height: 768px; }
+
 .onda-azul-top {
   background-image: url("img/onda-azul-top.svg"); }
 
