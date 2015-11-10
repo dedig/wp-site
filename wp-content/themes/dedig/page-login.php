@@ -13,8 +13,9 @@ get_header(); ?>
 					<input type="text" placeholder="Digite seu nome de usuário..." required>
 					<label>Senha:</label>
 					<input type="password" placeholder="Digite sua senha..." required>
-					<input type="submit" value="Enviar"></a>
+					<input type="submit" value="Enviar">
 				</form>
 			</div>
 		</article>
+	</div>
 <?php get_footer(); ?>

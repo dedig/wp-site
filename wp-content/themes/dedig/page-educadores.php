@@ -4,23 +4,10 @@ get_header(); ?>
 		<article>
 			<div class="row content-block orange-block fluid" id="entrar">
 				<div class="col-sm-12 text-block">
-					<a href="http://54.94.234.51" target="_blank"><button>Fazer Login</button></a>
+					<a href="http://54.94.234.51" target="_blank"><button>Fazer login</button></a>
 				</div>
 			</div>
 			<div class="onda-laranja-bottom fluid"></div>
-
-			<!--
-			<nav class="pagination">
-				<a href="#"><p><<</p></a>
-				<a href="#"><p>...</p></a>
-				<a href="#"><p>2</p></a>
-				<a href="#"><p>3</p></a>
-				<a href="#" class="current"><p>4</p></a>
-				<a href="#"><p>5</p></a>
-				<a href="#"><p>6</p></a>
-				<a href="#"><p>...</p></a>
-				<a href="#"><p>>></p></a>
-			</nav> -->
 
 			<?php
 				$newsArgs = array( 'post', 'posts_per_page' => -1 );
@@ -62,18 +49,6 @@ get_header(); ?>
 
 			<?php endwhile; endif; ?>
 
-			<!-- <p><?php /*if(function_exists('wp_pagenavi')) { wp_pagenavi(); }*/ ?></p> -->
-
-			<!-- <nav class="pagination">
-				<a href="#"><p><<</p></a>
-				<a href="#"><p>...</p></a>
-				<a href="#"><p>2</p></a>
-				<a href="#"><p>3</p></a>
-				<a href="#" class="current"><p>4</p></a>
-				<a href="#"><p>5</p></a>
-				<a href="#"><p>6</p></a>
-				<a href="#"><p>...</p></a>
-				<a href="#"><p>>></p></a>
-			</nav> -->
 		</article>
+	</div>
 <?php get_footer(); ?>

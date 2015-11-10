@@ -86,4 +86,5 @@ get_header(); ?>
 
 		</article>
 		<?php endwhile; ?>
+	</div>
 <?php get_footer(); ?>

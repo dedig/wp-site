@@ -107,5 +107,6 @@ get_header(); ?>
 			</div>
 		</article>
 		<?php endwhile; ?>
+	</div>
 
 <?php get_footer(); ?>
