@@ -1,7 +1,7 @@
 <?php $sessao[3] = 'style="color:#FDA309;"';
 $currentId = 0;
 get_header(); ?>
-<div class="container">
+	<div class="container">
 		<article>
 			<?php
 				if ( have_posts() ) :
@@ -46,4 +46,5 @@ get_header(); ?>
 			</div>
 			<?php endwhile; endif; ?>
 		</article>
+	</div>
 <?php get_footer(); ?>

@@ -4,13 +4,9 @@
 
 // PLACEHOLDERS
 
-%center {
-	margin: 0 auto;
-	text-align: center;
-}
-
 %reset {
 	border: 0 none;
+	margin: 0;
 	color: $cinza;
 	text-decoration: none;
 	list-style: none;
@@ -24,10 +20,12 @@
 
 html, body {
 	height: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 body {
-	@extend %center;
+	text-align: center;
 	background-color: $branco;
 	overflow-x: hidden;
 }

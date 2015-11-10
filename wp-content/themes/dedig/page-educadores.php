@@ -76,4 +76,5 @@ get_header(); ?>
 				<a href="#"><p>>></p></a>
 			</nav> -->
 		</article>
+	</div>
 <?php get_footer(); ?>

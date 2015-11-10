@@ -37,4 +37,5 @@ get_header(); ?>
 				</div>
 			</div>
 		</article>
+	</div>
 <?php get_footer(); ?>

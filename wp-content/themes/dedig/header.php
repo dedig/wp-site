@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 	<?php wp_head(); ?>
 </head>
-<body>
+<body><div id="wrapper">
 	<header id="main-menu">
 		<a href="<?php echo home_url( '/' ); ?>"><img id="logo-header" src="<?php bloginfo('template_directory'); ?>/img/logo-dedig-header.png" alt="Logo Dedig" /></a>
 		<div id="list">
@@ -37,3 +37,4 @@
 			<a href="<?php echo home_url( '/index.php/contato' ); ?>"><h2 class="menu-button" <?php echo $sessao[4]; ?> >Contato</h2></a>
 		</nav>
 	</header>
+	<div id="content">

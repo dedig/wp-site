@@ -4,4 +4,5 @@
 		<h1>ERRO 404</h1>
 		<p>Página indisponível</p>
 	</div>
+</div>
 <?php get_footer(); ?>

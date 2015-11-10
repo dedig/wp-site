@@ -4,14 +4,26 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'style.css': 'style.scss'
+          'style.css': 'style.scss',
         }
       }
     },
+
     uglify: {
       build: {
         files: {
           'js/functions.min.js': 'js/functions.js',
+        }
+      }
+    },
+
+    watch: {
+      scripts: {
+        files: '**/*',
+        tasks: ['sass', 'uglify'],
+        options: {
+          interrupt: true,
+          event: ['changed', 'added', 'deleted'],
         }
       }
     }
@@ -19,6 +31,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['sass','uglify']);
+  grunt.registerTask('default', ['sass','uglify','watch']);
 };

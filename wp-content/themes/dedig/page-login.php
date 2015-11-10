@@ -17,4 +17,5 @@ get_header(); ?>
 				</form>
 			</div>
 		</article>
+	</div>
 <?php get_footer(); ?>

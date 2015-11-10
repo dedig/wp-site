@@ -16,7 +16,6 @@ function showBlocks(el, display, color) {
 var contentBlocks = document.querySelectorAll('.content-block');
 var textBlocks = document.querySelectorAll('.text-block');
 var imgBlocks = document.querySelectorAll('.img-block');
-var iframe = document.getElementById('yTubeIFrame');
 
 function verticalFix() {
 	for (var i = 0; i < contentBlocks.length; i++) {
@@ -98,14 +97,27 @@ function fluidBoxesFix() {
 	}
 }
 
+// FOOTER ADJUST
+
+var wrapper = document.getElementById('wrapper');
+var header = document.querySelector('header');
+var content = document.getElementById('content');
+var footer = document.querySelector('footer');
+
 //
 
 window.onload = function() {
 	menu.style.top = String(marginTop) + 'px';
 	verticalFix();
 	fluidBoxesFix();
-	iframe.src = "https://www.youtube.com/embed/g4q8Jhn3YhQ";
-	iframe.frameBorder = 5;
+	try {
+		var iframe = document.getElementById('yTubeIFrame');
+		iframe.src = "https://www.youtube.com/embed/g4q8Jhn3YhQ";
+		iframe.frameBorder = 5;
+	}
+	catch (err) {
+		console.log("Don't have a video in this page.");
+	}
 };
 
 window.onresize = function() {
