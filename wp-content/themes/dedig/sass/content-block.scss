@@ -31,6 +31,10 @@
 
 /* CONTENT */
 
+#content {
+  min-height: 768px;
+}
+
 .onda-azul-top { @include onda('img/onda-azul-top.svg'); }
 .onda-laranja-top { @include onda('img/onda-laranja-top.svg'); }
 .onda-azul-bottom { @include onda('img/onda-azul-bottom.svg'); }
