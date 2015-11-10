@@ -29,10 +29,8 @@
 			<li class="slider-dots"></li>
 			<?php endif; endwhile; ?>
 		</ul>
-		<h1>Descubra a sala Dedig!</h1>
-		<a id="jogoBtn"><button>Lorem</button></a>
-		<!-- <a href="#" id="jogoBtn"><button>Tenho cadastro</button></a><br/>
-		<a href="#" id="tryBtn"><button>Não tenho cadastro</button></a> -->
+		<h1>Conheça a sala Dedig!</h1>
+		<a href="<?php echo home_url( '/index.php/cadastre-se' ); ?>" id="jogoBtn"><button>Clique para descobrir</button></a>
 	</div>
 	
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/slider.js"></script>

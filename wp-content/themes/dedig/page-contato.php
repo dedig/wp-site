@@ -28,7 +28,7 @@ get_header(); ?>
 					<input type="text" name="assunto" placeholder="Digite o assunto..." required>
 					<label>Mensagem:</label>
 					<textarea rows="5" name="mensagem" onfocus="inFocus(this)" onblur="inBlur(this)" style="color:#a9a9a9;" required>Digite sua mensagem...</textarea>
-					<input type="submit" value="Enviar"></a>
+					<input type="submit" value="Enviar">
 				</form>
 				<div class="col-md-4" id="contato-sidebar">
 					<img src="<?php bloginfo('template_directory'); ?>/img/promaria-e-judi.png" alt="Envie sua mensagem!" />

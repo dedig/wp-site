@@ -5,17 +5,6 @@ get_header(); ?>
 			<div class="row">
 				<h1 class="col-md-12">Exibindo: todos</h1>
 			</div>
-			<nav class="pagination">
-				<a href="#"><p><<</p></a>
-				<a href="#"><p>...</p></a>
-				<a href="#"><p>2</p></a>
-				<a href="#"><p>3</p></a>
-				<a href="#" class="current"><p>4</p></a>
-				<a href="#"><p>5</p></a>
-				<a href="#"><p>6</p></a>
-				<a href="#"><p>...</p></a>
-				<a href="#"><p>>></p></a>
-			</nav>
 
 			<?php $newsArgs = array( 'post', 'posts_per_page' => -1 );
 				$newsLoop = new WP_Query( $newsArgs );
@@ -42,17 +31,6 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<nav class="pagination">
-				<a href="#"><p><<</p></a>
-				<a href="#"><p>...</p></a>
-				<a href="#"><p>2</p></a>
-				<a href="#"><p>3</p></a>
-				<a href="#" class="current"><p>4</p></a>
-				<a href="#"><p>5</p></a>
-				<a href="#"><p>6</p></a>
-				<a href="#"><p>...</p></a>
-				<a href="#"><p>>></p></a>
-			</nav>
 		</article>
 	</div>
 <?php get_footer(); ?>
