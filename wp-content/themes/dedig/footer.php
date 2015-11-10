@@ -24,14 +24,14 @@
 							<li><p>E-mail: <a href="mailto:contato@dedig.com.br">contato@dedig.com.br</a></p></li>
 						</ul>
 					</div>
-					<div class="footer-item">
+					<!-- <div class="footer-item">
 						<h3>REDES SOCIAIS</h3>
 						<div>
 							<a href="#"><div class="social"><img id="facebook" src="<?php bloginfo('template_directory'); ?>/img/social.png" alt="Facebook" title="Facebook" /></div></a>
 							<a href="#"><div class="social"><img id="twitter" src="<?php bloginfo('template_directory'); ?>/img/social.png" alt="Twitter" title="Twitter" /></div></a>
 							<a href="#"><div class="social"><img id="youtube" src="<?php bloginfo('template_directory'); ?>/img/social.png" alt="Youtube" title="Youtube" /></div></a>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				<div id="copyright" class="col-sm-12 fluid">
 					<p>Dedig ©  2015 - Todos os direitos reservados</p>
