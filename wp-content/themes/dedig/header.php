@@ -23,7 +23,9 @@
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 	<?php wp_head(); ?>
 </head>
-<body><div id="wrapper">
+<body>
+<?php include_once("analyticstracking.php"); ?>
+<div id="wrapper">
 	<header id="main-menu">
 		<a href="<?php echo home_url( '/' ); ?>"><img id="logo-header" src="<?php bloginfo('template_directory'); ?>/img/logo-dedig-header.png" alt="Logo Dedig" /></a>
 		<div id="list">
