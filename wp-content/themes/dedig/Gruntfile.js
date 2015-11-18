@@ -20,7 +20,7 @@ module.exports = function(grunt) {
     watch: {
       scripts: {
         files: '**/*',
-        tasks: ['sass', 'uglify'],
+        tasks: ['sass'],
         options: {
           interrupt: true,
           event: ['changed', 'added', 'deleted'],

@@ -14,7 +14,7 @@
 	<!--[if lt IE 9]>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
-	<link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/img/logo-favicon.png">
+	<link rel="icon" type="image/x-icon" href="<?php bloginfo('template_directory'); ?>/img/logo-favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
