@@ -4,7 +4,7 @@ get_header(); ?>
 		<article>
 			<div class="row content-block orange-block fluid" id="entrar">
 				<div class="col-sm-12 text-block">
-					<a href="http://54.94.234.51" target="_blank"><button>Fazer login</button></a>
+					<a href="http://app.dedig.com.br" target="_blank"><button>Fazer login</button></a>
 				</div>
 			</div>
 			<div class="onda-laranja-bottom fluid"></div>
