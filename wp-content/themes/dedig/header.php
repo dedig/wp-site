@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<!--
+
+ __________________________________________
+/ Oi, tudo bem? O que você tá fazendo aqui?\
+\------------------------------------------/
+        \   ^___^
+         \  (ಠ_ಠ)\_______
+            (___)\       )\/\
+                ||----w |
+                ||     ||
+
+
+-->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">

@@ -1,3 +1,4 @@
+#Wordpress
 *.log
 sitemap.xml
 sitemap.xml.gz
@@ -11,8 +12,17 @@ wp-content/cache/
 wp-content/upgrade/
 wp-content/wp-cache-config.php
 wp-content/uploads/
+
+#Modulos do Node e arquivos gerados pelo Sass
+wp-content/themes/dedig/.sass-cache/
+wp-content/themes/dedig/node_modules/
+
+#subpastas
 game/
 jogar/
 wiki/
-wp-content/themes/dedig/node_modules/
 guide/
+
+#novo projeto Wordpress
+wp-content/themes/twenty*/
+wp-content/plugins/hello.php
