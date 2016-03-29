@@ -34,28 +34,28 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="row content-block orange-block fluid">
-				<div class="col-sm-4">
+				<div class="col-sm-6">
 					<img src="<?php bloginfo('template_directory'); ?>/img/sondagem.png">
 				</div>
-				<div class="col-sm-8 text-block">
+				<div class="col-sm-6 text-block">
 					<h2><?php echo $title3; ?></h2>
 					<p><?php echo $content3; ?></p>
 				</div>
 			</div>
 			<div class="row content-block orange-block fluid">
-				<div class="col-sm-4">
+				<div class="col-sm-6">
 					<img src="<?php bloginfo('template_directory'); ?>/img/atividade.png">
 				</div>
-				<div class="col-sm-8 text-block">
+				<div class="col-sm-6 text-block">
 					<h2><?php echo $title4; ?></h2>
 					<p><?php echo $content4; ?> </p>
 				</div>
 			</div>
 			<div class="row content-block orange-block fluid">
-				<div class="col-sm-4">
+				<div class="col-sm-6">
 					<img src="<?php bloginfo('template_directory'); ?>/img/avaliacao.png">
 				</div>
-				<div class="col-sm-8 text-block">
+				<div class="col-sm-6 text-block">
 					<h2><?php echo $title5; ?></h2>
 					<p><?php echo $content5; ?></p>
 				</div>

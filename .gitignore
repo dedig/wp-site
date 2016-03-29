@@ -11,7 +11,6 @@ wp-content/blogs.dir/
 wp-content/cache/
 wp-content/upgrade/
 wp-content/wp-cache-config.php
-wp-content/uploads/
 
 #Modulos do Node e arquivos gerados pelo Sass
 wp-content/themes/dedig/.sass-cache/
