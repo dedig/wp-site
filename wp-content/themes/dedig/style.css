@@ -473,8 +473,7 @@ a:hover, a:focus, a:active {
       .content-block .text-block {
         text-align: center !important; } }
   .content-block img {
-    width: 100%;
-    max-width: 360px; }
+    width: 100%; }
   .content-block h4, .content-block h4 a {
     color: #727272; }
   .content-block h4 a:hover {
@@ -574,14 +573,14 @@ a:hover, a:focus, a:active {
       height: auto; } }
 
 .equipe {
-  height: 600px;
+  height: 800px;
   margin-bottom: 20px; }
   .equipe img {
     width: 100%;
     height: auto; }
   @media only screen and (max-width: 992px) {
     .equipe {
-      height: 630px; } }
+      height: 830px; } }
   @media only screen and (max-width: 767px) {
     .equipe {
       width: 60%;
@@ -831,9 +830,10 @@ a:hover, a:focus, a:active {
       text-align: center; } }
 
 #contato-sidebar {
-  padding: 100px 0; }
+  padding: 100px 0 100px 30px; }
   #contato-sidebar img {
-    padding: 30px 0; }
+    padding: 30px 0;
+    width: 100%; }
   #contato-sidebar h4 {
     font-size: 1.7em; }
     #contato-sidebar h4 a:hover {
