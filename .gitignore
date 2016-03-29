@@ -11,6 +11,7 @@ wp-content/blogs.dir/
 wp-content/cache/
 wp-content/upgrade/
 wp-content/wp-cache-config.php
+wp-content/uploads/
 
 #Modulos do Node e arquivos gerados pelo Sass
 wp-content/themes/dedig/.sass-cache/
@@ -20,7 +21,7 @@ wp-content/themes/dedig/node_modules/
 game/
 jogar/
 wiki/
-guide/
+design/
 
 #novo projeto Wordpress
 wp-content/themes/twenty*/
