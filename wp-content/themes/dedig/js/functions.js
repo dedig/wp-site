@@ -1,21 +1,9 @@
 var w = window.innerWidth;
 
-// ORANGE-SHOW
-
-function showBlocks(el, display, color) {
-	var blocks = document.querySelectorAll(el);
-	for ( var i = 0; i < blocks.length; i++) {
-		blocks[i].style.display = display;
-		if (color != 'undefined')
-			blocks[i].style.backgroundColor = color;
-	}
-}
-
 // VERTICAL-FIX
 
 var contentBlocks = document.querySelectorAll('.content-block');
 var textBlocks = document.querySelectorAll('.text-block');
-var imgBlocks = document.querySelectorAll('.img-block');
 
 function verticalFix() {
 	for (var i = 0; i < contentBlocks.length; i++) {
@@ -28,14 +16,6 @@ function verticalFix() {
 		else
 			textBlocks[i].style.paddingTop = '0';
 	}
-	setTimeout(function(){
-		showBlocks('.orange-block','block','#e07b4d');
-		showBlocks('.blue-block','block','#266ab8');
-		showBlocks('.onda-azul-top','block');
-		showBlocks('.onda-laranja-top','block');
-		showBlocks('.onda-azul-bottom','block');
-		showBlocks('.onda-laranja-bottom','block');
-	}, 10);
 }
 
 verticalFix();
@@ -79,24 +59,6 @@ function upMenu() {
 	}
 }
 
-// FLUID BLOCK
-
-var fluidBoxes = document.querySelectorAll('.fluid');
-var container = document.querySelectorAll('.container')[0];
-
-function fluidBoxesFix() {
-	var containerW = container.clientWidth - 30;
-	var margin = (w - containerW) / 2;
-
-	for (var i = 0; i < fluidBoxes.length; i++) {
-		fluidBoxes[i].style.width = String(containerW + (2 * margin)) + 'px';
-		fluidBoxes[i].style.marginLeft = '-' + String(margin) + 'px';
-		fluidBoxes[i].style.marginRight = 'auto';
-		fluidBoxes[i].style.paddingLeft = String(margin) + 'px';
-		fluidBoxes[i].style.paddingRight = String(margin) + 'px';
-	}
-}
-
 // FOOTER ADJUST
 
 var wrapper = document.getElementById('wrapper');
@@ -109,7 +71,6 @@ var footer = document.querySelector('footer');
 window.onload = function() {
 	menu.style.top = String(marginTop) + 'px';
 	verticalFix();
-	fluidBoxesFix();
 	try {
 		var iframe = document.getElementById('yTubeIFrame');
 		iframe.src = "https://www.youtube.com/embed/g4q8Jhn3YhQ";
@@ -127,7 +88,6 @@ window.onresize = function() {
 		menu.style.top = String(marginTop) + 'px';
 		w = window.innerWidth;
 		verticalFix();
-		fluidBoxesFix();
 	}
 };
 

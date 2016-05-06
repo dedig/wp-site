@@ -15,27 +15,27 @@ get_header(); ?>
 			el.style.color='#727272';
 	}
 	</script>
-	<div class="container">
 		<article>
-			<div class="row orange-block fluid header-padding">
-				<form action="#" class="col-md-8 form">
-					<h1>Entre em Contato</h1>
-					<label>Nome:</label>
-					<input type="text" name="nome" placeholder="Digite seu nome..." required>
-					<label>E-mail:</label>
-					<input type="email" name="email" placeholder="Digite seu e-mail..." required>
-					<label>Assunto:</label>
-					<input type="text" name="assunto" placeholder="Digite o assunto..." required>
-					<label>Mensagem:</label>
-					<textarea rows="5" name="mensagem" onfocus="inFocus(this)" onblur="inBlur(this)" style="color:#a9a9a9;" required>Digite sua mensagem...</textarea>
-					<input type="submit" value="Enviar">
-				</form>
-				<div class="col-md-4" id="contato-sidebar">
-					<img src="<?php bloginfo('template_directory'); ?>/img/promaria-e-judi.png" alt="Envie sua mensagem!" />
-					<h4>(11) 3565-3940</h4>
-					<h4><a href="mailto:contato@dedig.com.br">contato@dedig.com.br</a></h4>
+			<div class="orange-block header-padding">
+				<div class="container">
+					<form action="#" class="col-md-8 form">
+						<h1>Entre em Contato</h1>
+						<label>Nome:</label>
+						<input type="text" name="nome" placeholder="Digite seu nome..." required>
+						<label>E-mail:</label>
+						<input type="email" name="email" placeholder="Digite seu e-mail..." required>
+						<label>Assunto:</label>
+						<input type="text" name="assunto" placeholder="Digite o assunto..." required>
+						<label>Mensagem:</label>
+						<textarea rows="5" name="mensagem" onfocus="inFocus(this)" onblur="inBlur(this)" style="color:#a9a9a9;" required>Digite sua mensagem...</textarea>
+						<input type="submit" value="Enviar">
+					</form>
+					<div class="col-md-4" id="contato-sidebar">
+						<img src="<?php bloginfo('template_directory'); ?>/img/promaria-e-judi.png" alt="Envie sua mensagem!" />
+						<h4>(11) 3565-3940</h4>
+						<h4><a href="mailto:contato@dedig.com.br">contato@dedig.com.br</a></h4>
+					</div>
 				</div>
 			</div>
 		</article>
-	</div>
 <?php get_footer(); ?>

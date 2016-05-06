@@ -172,7 +172,15 @@ function save_blocos(){
 
 // Banners Meta Box
 function banners_meta_box() {
+	add_meta_box('meta_box_banner_link', __( 'Link' ), 'banner_link', 'banners', 'normal', 'high');
 	add_meta_box('meta_box_avaliable', __( 'Exibir na página' ), 'banner_show_hide', 'banners', 'normal', 'high');
+}
+
+function banner_link() {
+	global $post;
+	$banner_link_value = get_post_meta($post->ID, 'banner_link_value_meta', true); ?>
+	<input type="text" name="banner_link_value_meta" value="<?php echo $banner_link_value; ?>" style="width:100%;" />
+<?php
 }
 
 function banner_show_hide() {
@@ -188,6 +196,7 @@ add_action('save_post', 'save_banners_post');
 
 function save_banners_post(){
 	global $post;
+	update_post_meta($post->ID, 'banner_link_value_meta', $_POST['banner_link_value_meta']);
 	update_post_meta($post->ID, 'isAvaliable', $_POST['isAvaliable']);
 }
 
