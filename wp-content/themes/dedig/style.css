@@ -1,15 +1,15 @@
-#jogoBtn button, #tryBtn button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
+#jogoBtn button, #tryBtn button, .content-block .text-block button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
   font-weight: normal;
   border-radius: 5px;
   border-bottom-style: solid;
   border-bottom-width: 2px; }
 
-#jogoBtn button:active, #tryBtn button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
+#jogoBtn button:active, #tryBtn button:active, .content-block .text-block button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
   margin-top: 3px;
   padding-bottom: 19px;
   border: none; }
 
-#jogoBtn button:focus, #tryBtn button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
+#jogoBtn button:focus, #tryBtn button:focus, .content-block .text-block button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
   outline: none; }
 
 /* FONTS */
@@ -125,6 +125,7 @@ footer p {
   list-style: none; }
 
 html, body {
+  width: 100%;
   height: 100%;
   padding: 0;
   margin: 0; }
@@ -138,18 +139,18 @@ a:hover, a:focus, a:active {
   text-decoration: none;
   outline: none; }
 
-#jogoBtn button, #tryBtn button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
+#jogoBtn button, #tryBtn button, .content-block .text-block button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
   font-weight: normal;
   border-radius: 5px;
   border-bottom-style: solid;
   border-bottom-width: 2px; }
 
-#jogoBtn button:active, #tryBtn button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
+#jogoBtn button:active, #tryBtn button:active, .content-block .text-block button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
   margin-top: 3px;
   padding-bottom: 19px;
   border: none; }
 
-#jogoBtn button:focus, #tryBtn button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
+#jogoBtn button:focus, #tryBtn button:focus, .content-block .text-block button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
   outline: none; }
 
 /* MAIN MENU */
@@ -285,18 +286,18 @@ a:hover, a:focus, a:active {
   margin-right: 10px;
   border-radius: 7px; }
 
-#jogoBtn button, #tryBtn button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
+#jogoBtn button, #tryBtn button, .content-block .text-block button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
   font-weight: normal;
   border-radius: 5px;
   border-bottom-style: solid;
   border-bottom-width: 2px; }
 
-#jogoBtn button:active, #tryBtn button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
+#jogoBtn button:active, #tryBtn button:active, .content-block .text-block button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
   margin-top: 3px;
   padding-bottom: 19px;
   border: none; }
 
-#jogoBtn button:focus, #tryBtn button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
+#jogoBtn button:focus, #tryBtn button:focus, .content-block .text-block button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
   outline: none; }
 
 /* FOOTER */
@@ -360,20 +361,22 @@ a:hover, a:focus, a:active {
 
 #copyright {
   background-color: #1c4d83;
-  padding: 15px 0; }
+  padding: 15px 0;
+  width: 100%; }
 
 .onda-azul-top, .onda-laranja-top, .onda-azul-bottom, .onda-laranja-bottom {
-  height: 40px;
-  display: none; }
+  background-size: cover;
+  width: 100%;
+  height: 50px; }
   @media only screen and (max-width: 1900px) {
     .onda-azul-top, .onda-laranja-top, .onda-azul-bottom, .onda-laranja-bottom {
-      height: 20px; } }
+      height: 40px; } }
   @media only screen and (max-width: 1000px) {
     .onda-azul-top, .onda-laranja-top, .onda-azul-bottom, .onda-laranja-bottom {
-      height: 10px; } }
+      height: 30px; } }
   @media only screen and (max-width: 480px) {
     .onda-azul-top, .onda-laranja-top, .onda-azul-bottom, .onda-laranja-bottom {
-      height: 5px; } }
+      height: 15px; } }
 
 /* CONTENT */
 #content {
@@ -395,7 +398,6 @@ a:hover, a:focus, a:active {
   text-align: center !important;
   width: 100%;
   height: auto;
-  display: block;
   z-index: 0; }
   #cta-index h1, #video-dedig h1 {
     margin-top: 100px;
@@ -469,10 +471,21 @@ a:hover, a:focus, a:active {
   padding-bottom: 30px; }
   .content-block .text-block {
     text-align: left !important; }
+    .content-block .text-block button {
+      color: #fff;
+      background-color: #266ab8;
+      border-color: #1c4d83;
+      padding: 15px; }
+    .content-block .text-block button:hover {
+      background-color: #2ba7e7;
+      border-color: #266ab8; }
+    .content-block .text-block button:active {
+      background-color: #266ab8;
+      padding: 15px 15px 14px !important; }
     @media only screen and (max-width: 767px) {
       .content-block .text-block {
         text-align: center !important; } }
-  .content-block img {
+  .content-block img, .content-block iframe {
     width: 100%; }
   .content-block h4, .content-block h4 a {
     color: #727272; }
@@ -483,7 +496,8 @@ a:hover, a:focus, a:active {
   padding-top: 0px !important; }
 
 .orange-block {
-  /*background-color: $laranja;*/ }
+  background-color: #e07b4d;
+  width: 100%; }
   .orange-block h1, .orange-block h2, .orange-block h3, .orange-block label, .orange-block h4, .orange-block h4 a, .orange-block p {
     color: #FFF !important; }
   .orange-block h4 a:hover {
@@ -493,7 +507,8 @@ a:hover, a:focus, a:active {
       text-align: center; } }
 
 .blue-block {
-  /*background-color: $azul;*/ }
+  background-color: #266ab8;
+  width: 100%; }
   .blue-block h1, .blue-block p, .blue-block ul {
     color: #FFF; }
   .blue-block ul, .blue-block li {
@@ -738,7 +753,8 @@ a:hover, a:focus, a:active {
 
 #copyright {
   background-color: #1c4d83;
-  padding: 15px 0; }
+  padding: 15px 0;
+  width: 100%; }
 
 .pagination {
   text-align: left;
@@ -784,18 +800,18 @@ a:hover, a:focus, a:active {
 .current:hover, .current:active {
   background-color: #c05527; }
 
-#jogoBtn button, #tryBtn button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
+#jogoBtn button, #tryBtn button, .content-block .text-block button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
   font-weight: normal;
   border-radius: 5px;
   border-bottom-style: solid;
   border-bottom-width: 2px; }
 
-#jogoBtn button:active, #tryBtn button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
+#jogoBtn button:active, #tryBtn button:active, .content-block .text-block button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
   margin-top: 3px;
   padding-bottom: 19px;
   border: none; }
 
-#jogoBtn button:focus, #tryBtn button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
+#jogoBtn button:focus, #tryBtn button:focus, .content-block .text-block button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
   outline: none; }
 
 .form {
@@ -842,18 +858,18 @@ a:hover, a:focus, a:active {
     #contato-sidebar {
       padding: 50px 0; } }
 
-#jogoBtn button, #tryBtn button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
+#jogoBtn button, #tryBtn button, .content-block .text-block button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
   font-weight: normal;
   border-radius: 5px;
   border-bottom-style: solid;
   border-bottom-width: 2px; }
 
-#jogoBtn button:active, #tryBtn button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
+#jogoBtn button:active, #tryBtn button:active, .content-block .text-block button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
   margin-top: 3px;
   padding-bottom: 19px;
   border: none; }
 
-#jogoBtn button:focus, #tryBtn button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
+#jogoBtn button:focus, #tryBtn button:focus, .content-block .text-block button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
   outline: none; }
 
 .login {

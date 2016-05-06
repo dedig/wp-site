@@ -10,7 +10,7 @@
 			$newsLoop = new WP_Query( $newsArgs );
 			while ( $newsLoop -> have_posts() ) : $newsLoop -> the_post();
 				if (get_post_meta($post->ID, 'isAvaliable', true) == 'Sim'): ?>
-			<a class="banner" href="#">
+			<a class="banner" href="<?php echo get_post_meta($post->ID, 'banner_link_value_meta', true); ?>">
 				<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
 				<h1><?php the_title(); ?></h1>
 			</a>
@@ -35,7 +35,6 @@
 	
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/slider.js"></script>
 
-	<div class="container">
 		<?php
 			$home = new WP_Query('page_id=48');
 
@@ -51,22 +50,31 @@
 				$content5 = get_post_meta($post->ID, 'bloco_5_content_value_meta', true);
 		?>
 		<article>
-			<div class="row content-block">
-				<div class="col-sm-8 text-block">
-					<h1><?php echo $title2; ?></h1>
-					<p><?php echo $content2; ?></p>
-				</div>
-				<div class="col-sm-4">
-					<img src="<?php bloginfo('template_directory'); ?>/img/artur-home.png" />
+			<div class="content-block">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 text-block">
+							<h1><?php echo $title2; ?></h1>
+							<p><?php echo $content2; ?></p>
+						</div>
+						<div class="col-sm-4">
+							<img src="<?php bloginfo('template_directory'); ?>/img/artur-home.png" />
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="row content-block">
-				<div class="col-sm-4">
-					<img src="<?php bloginfo('template_directory'); ?>/img/mel-home.png" />
-				</div>
-				<div class="col-sm-8 text-block">
-					<h1><?php echo $title3; ?></h1>
-					<p><?php echo $content3; ?></p>
+
+			<div class="content-block">
+				<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="<?php bloginfo('template_directory'); ?>/img/mel-home.png" />
+							</div>
+						<div class="col-sm-8 text-block">
+							<h1><?php echo $title3; ?></h1>
+							<p><?php echo $content3; ?></p>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -79,18 +87,21 @@
 			</div>
 			-->
 			
-			<div class="onda-laranja-top fluid"></div>
-			<div class="row content-block orange-block fluid">
-				<div class="col-sm-8 text-block">
-					<h1><?php echo $title5; ?></h1>
-					<h4><?php echo $content5; ?></h4>
-				</div>
-				<div class="col-sm-4">
-					<img src="<?php bloginfo('template_directory'); ?>/img/dimi-home.png" />
+			<div class="onda-laranja-top"></div>
+			<div class="content-block orange-block">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 text-block">
+							<h1><?php echo $title5; ?></h1>
+							<h4><?php echo $content5; ?></h4>
+						</div>
+						<div class="col-sm-4">
+							<img src="<?php bloginfo('template_directory'); ?>/img/dimi-home.png" />
+						</div>
+					</div>
 				</div>
 			</div>
 		</article>
 		<?php endwhile; ?>
-	</div>
 
 <?php get_footer(); ?>
