@@ -20,7 +20,25 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="description" content="Plataforma de desafios digitais educativos onde os alunos aprendem se divertindo.">
 	<meta name="keywords" content="jogos, educativo, jogos educacionais, plataforma educativa">
-	<meta name="author" content="Bruno Araujo <araujo.contato@gmail.com>">
+	<meta name="author" content="Por Equipe Dedig: contato@dedig.com.br">
+
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:url" content="http://www.dedig.com.br">
+	<meta property="og:title" content="Dedig | Uma Escola do Futuro">
+	<meta property="og:site_name" content="Dedig">
+	<meta property="og:description" content="Plataforma de desafios digitais educativos onde os alunos aprendem se divertindo.">
+	<meta property="og:image" content="http://dedig.com.br/wp-content/themes/dedig/img/banner-dedig.jpg">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:type" content="website">
+
+	<!--
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="reidark">
+	<meta property="article:section" content="Tutoriais">
+	<meta property="article:tag" content="Facebook, tags, og, open graph">
+	<meta property="article:published_time" content="date_time">
+	-->
+
 	<title><?php bloginfo('name');  wp_title( '|', true, 'left' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
