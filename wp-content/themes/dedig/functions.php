@@ -273,7 +273,7 @@ function fb_opengraph() {
     global $post;
 
     if(has_post_thumbnail($post->ID)) {
-        $img_src = wp_get_attachment_image_src(get_post_thumbnail_id( $post->ID ), 'medium');
+    	$img_src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'big')[0];
     }
 
     else {

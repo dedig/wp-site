@@ -20,7 +20,7 @@
 		<article>
 			<div class="container content-block">
 					<div class="col-sm-6">
-						<img src="<?php bloginfo('template_directory'); ?>/img/dedig-bett-brasil-educar.jpg" style="width:100%;height:100%;float:left;margin-bottom:50px;">
+						<img src="<?php bloginfo('template_directory'); ?>/img/banner-bett.jpg" style="width:100%;height:100%;float:left;margin:24% 0;">
 					</div>
 					<div class="col-sm-6 text-block">
 						<h2><?php the_title(); ?></h2>
@@ -28,7 +28,7 @@
 						<hr>
 						<h3><?php echo $title2; ?></h3>
 						<p><?php echo $content2; ?></p>
-						<a href="http://www.easyeventos.com.br/easyweb/CredenciamentoWeb/Autenticacao/Clt_Identificacao.aspx" target="_blank">
+						<a href="http://www.easyeventos.com.br/EasyWeb/CredenciamentoWeb/Default.aspx?Identifica=EDUCAR_VISITANTE" target="_blank">
 							<button>Faça seu cadastramento</button>
 						</a>
 					</div>
