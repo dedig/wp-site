@@ -20,7 +20,7 @@
 		<article>
 			<div class="container content-block">
 					<div class="col-sm-6">
-						<img src="<?php bloginfo('template_directory'); ?>/img/dedig-bett-brasil-educar.jpg" style="width:100%;height:100%;float:left;margin:50px;">
+						<img src="<?php bloginfo('template_directory'); ?>/img/dedig-bett-brasil-educar.jpg" style="width:100%;height:100%;float:left;margin-bottom:50px;">
 					</div>
 					<div class="col-sm-6 text-block">
 						<h2><?php the_title(); ?></h2>
