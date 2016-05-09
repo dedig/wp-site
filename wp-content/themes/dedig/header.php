@@ -20,7 +20,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="description" content="Plataforma de desafios digitais educativos onde os alunos aprendem se divertindo. Clique para saber mais...">
 	<meta name="keywords" content="jogos, educativo, jogos educacionais, plataforma educativa">
-	<meta name="author" content="Por Equipe Dedig: contato@dedig.com.br">
+	<meta name="author" content="Equipe Dedig : contato@dedig.com.br">
 
 	<title><?php bloginfo('name');  wp_title( '|', true, 'left' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
