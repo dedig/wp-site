@@ -1,6 +1,6 @@
 <?php $sessao[4] = 'style="color:#FDA309;"';
 
-$emailTo = 'bruno.araujo@dedig.com.br';
+$emailTo = 'contato@dedig.com.br';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name    = stripslashes(trim($_POST['nome']));
@@ -14,7 +14,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     
     $emailIsValid = filter_var($email, FILTER_VALIDATE_EMAIL);
-    
+
     if($name && $email && $emailIsValid && $message) {
         $body = "Email: $email <br /> Mensagem: $message";
         $headers .= sprintf( 'Return-Path: %s%s', $email, PHP_EOL );
@@ -27,7 +27,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $headers .= sprintf( 'MIME-Version: 1.0%s', PHP_EOL );
         $headers .= sprintf( 'Content-Transfer-Encoding: 8bit%s', PHP_EOL );
         $headers .= sprintf( 'Content-Type: text/html; charset="utf-8"%s', PHP_EOL );
-        echo $headers;
         wp_mail($emailTo, "=?utf-8?B?".base64_encode($subject)."?=", $body, $headers);
         $emailSent = true;
     }
@@ -73,7 +72,7 @@ get_header();
 						<form action="<?php echo $_SERVER['REQUEST_URI']; ?>" role="form" method="POST">
 							<h1>Entre em Contato</h1>
 							<label>Nome:</label>
-							<input type="text" name="fullname" placeholder="Digite seu nome..." required>
+							<input type="text" name="nome" placeholder="Digite seu nome..." required>
 							<label>E-mail:</label>
 							<input type="email" name="email" placeholder="Digite seu e-mail..." required>
 							<label>Assunto:</label>
