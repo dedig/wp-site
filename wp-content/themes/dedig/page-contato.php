@@ -16,7 +16,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $emailIsValid = filter_var($email, FILTER_VALIDATE_EMAIL);
 
     if($name && $email && $emailIsValid && $message) {
-        $body = "Email: $email <br /> Mensagem: $message";
         $headers .= sprintf( 'Return-Path: %s%s', $email, PHP_EOL );
         $headers .= sprintf( 'From: %s%s', $email, PHP_EOL );
         $headers .= sprintf( 'Reply-To: %s%s', $email, PHP_EOL );
@@ -27,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $headers .= sprintf( 'MIME-Version: 1.0%s', PHP_EOL );
         $headers .= sprintf( 'Content-Transfer-Encoding: 8bit%s', PHP_EOL );
         $headers .= sprintf( 'Content-Type: text/html; charset="utf-8"%s', PHP_EOL );
-        wp_mail($emailTo, "=?utf-8?B?".base64_encode($subject)."?=", $body, $headers);
+        wp_mail($emailTo, $subject, $message, $headers);
         $emailSent = true;
     }
 

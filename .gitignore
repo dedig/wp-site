@@ -22,6 +22,8 @@ game/
 jogar/
 wiki/
 design/
+assets/
+download/
 
 #novo projeto Wordpress
 wp-content/themes/twenty*/
