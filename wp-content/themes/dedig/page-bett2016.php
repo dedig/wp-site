@@ -28,7 +28,7 @@
 						<hr>
 						<h3><?php echo $title2; ?></h3>
 						<p><?php echo $content2; ?></p>
-						<a href="http://www.easyeventos.com.br/easyweb/CredenciamentoWeb/Autenticacao/Clt_Identificacao.aspx" target="_blank">
+						<a href="http://www.easyeventos.com.br/EasyWeb/CredenciamentoWeb/Default.aspx?Identifica=EDUCAR_VISITANTE" target="_blank">
 							<button>Faça seu cadastramento</button>
 						</a>
 					</div>

@@ -78,14 +78,12 @@
 				</div>
 			</div>
 
-			<!--
 			<div class="row content-block fluid">
 				<div id="video-dedig" class="col-sm-12 text-block">
 					<h1><?php echo $title4; ?></h1>
 					<iframe id="yTubeIFrame"></iframe>
 				</div>
 			</div>
-			-->
 			
 			<div class="onda-laranja-top"></div>
 			<div class="content-block orange-block">
