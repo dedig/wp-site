@@ -338,8 +338,9 @@ a:hover, a:focus, a:active {
 
 .onda-azul-top, .onda-laranja-top, .onda-azul-bottom, .onda-laranja-bottom {
   background-size: cover;
+  background-repeat: repeat-x;
   width: 100%;
-  height: 50px; }
+  height: 85px; }
   @media only screen and (max-width: 1900px) {
     .onda-azul-top, .onda-laranja-top, .onda-azul-bottom, .onda-laranja-bottom {
       height: 40px; } }
@@ -348,7 +349,7 @@ a:hover, a:focus, a:active {
       height: 30px; } }
   @media only screen and (max-width: 480px) {
     .onda-azul-top, .onda-laranja-top, .onda-azul-bottom, .onda-laranja-bottom {
-      height: 15px; } }
+      height: 10px; } }
 
 /* CONTENT */
 #content {
@@ -842,8 +843,8 @@ a:hover, a:focus, a:active {
 #em-testes__submit {
   float: right; }
 
-#lhc_status_container {
-  border: 1px solid #0985c5 !important; }
+#lhc_status_container, #lhc_need_help_container {
+  border: none !important; }
 
 #lhc_need_help_main_title, #lhc_need_help_sub_title {
   color: #fff; }
