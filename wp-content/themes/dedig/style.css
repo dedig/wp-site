@@ -139,20 +139,6 @@ a:hover, a:focus, a:active {
   text-decoration: none;
   outline: none; }
 
-#jogoBtn button, #tryBtn button, .content-block .text-block button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
-  font-weight: normal;
-  border-radius: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px; }
-
-#jogoBtn button:active, #tryBtn button:active, .content-block .text-block button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
-  margin-top: 3px;
-  padding-bottom: 19px;
-  border: none; }
-
-#jogoBtn button:focus, #tryBtn button:focus, .content-block .text-block button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
-  outline: none; }
-
 /* MAIN MENU */
 #main-menu {
   width: 100%;
@@ -286,20 +272,6 @@ a:hover, a:focus, a:active {
   margin-right: 10px;
   border-radius: 7px; }
 
-#jogoBtn button, #tryBtn button, .content-block .text-block button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
-  font-weight: normal;
-  border-radius: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px; }
-
-#jogoBtn button:active, #tryBtn button:active, .content-block .text-block button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
-  margin-top: 3px;
-  padding-bottom: 19px;
-  border: none; }
-
-#jogoBtn button:focus, #tryBtn button:focus, .content-block .text-block button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
-  outline: none; }
-
 /* FOOTER */
 #footer-menu {
   background-color: #266ab8;
@@ -366,8 +338,9 @@ a:hover, a:focus, a:active {
 
 .onda-azul-top, .onda-laranja-top, .onda-azul-bottom, .onda-laranja-bottom {
   background-size: cover;
+  background-repeat: repeat-x;
   width: 100%;
-  height: 50px; }
+  height: 85px; }
   @media only screen and (max-width: 1900px) {
     .onda-azul-top, .onda-laranja-top, .onda-azul-bottom, .onda-laranja-bottom {
       height: 40px; } }
@@ -376,7 +349,7 @@ a:hover, a:focus, a:active {
       height: 30px; } }
   @media only screen and (max-width: 480px) {
     .onda-azul-top, .onda-laranja-top, .onda-azul-bottom, .onda-laranja-bottom {
-      height: 15px; } }
+      height: 10px; } }
 
 /* CONTENT */
 #content {
@@ -692,70 +665,6 @@ a:hover, a:focus, a:active {
       .recomendacoes img {
         width: 100%; } }
 
-/* FOOTER */
-#footer-menu {
-  background-color: #266ab8;
-  padding-top: 30px; }
-  #footer-menu p, #footer-menu a {
-    color: #FFF; }
-  #footer-menu ul {
-    padding-left: 0; }
-  #footer-menu a p:hover, #footer-menu a:hover {
-    color: #2ba7e7; }
-
-.footer-item {
-  padding-bottom: 30px;
-  text-align: left; }
-  @media only screen and (max-width: 767px) {
-    .footer-item {
-      text-align: center; } }
-
-#logo-footer {
-  width: 70%; }
-  @media only screen and (max-width: 767px) {
-    #logo-footer {
-      width: auto; } }
-  @media only screen and (max-width: 480px) {
-    #logo-footer {
-      width: 100%; } }
-
-.social {
-  width: 41px;
-  height: 41px;
-  overflow: hidden;
-  display: inline-block;
-  margin-right: 10px; }
-
-#twitter {
-  margin-left: -41px;
-  margin-top: 0;
-  width: auto; }
-
-#youtube {
-  margin-left: -82px;
-  margin-top: 0;
-  width: auto; }
-
-#facebook:hover {
-  margin-left: 0;
-  margin-top: -41px;
-  width: auto; }
-
-#twitter:hover {
-  margin-left: -41px;
-  margin-top: -41px;
-  width: auto; }
-
-#youtube:hover {
-  margin-left: -82px;
-  margin-top: -41px;
-  width: auto; }
-
-#copyright {
-  background-color: #1c4d83;
-  padding: 15px 0;
-  width: 100%; }
-
 .pagination {
   text-align: left;
   width: 100%;
@@ -800,20 +709,6 @@ a:hover, a:focus, a:active {
 .current:hover, .current:active {
   background-color: #c05527; }
 
-#jogoBtn button, #tryBtn button, .content-block .text-block button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
-  font-weight: normal;
-  border-radius: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px; }
-
-#jogoBtn button:active, #tryBtn button:active, .content-block .text-block button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
-  margin-top: 3px;
-  padding-bottom: 19px;
-  border: none; }
-
-#jogoBtn button:focus, #tryBtn button:focus, .content-block .text-block button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
-  outline: none; }
-
 .form {
   padding: 100px 0;
   text-align: left; }
@@ -857,20 +752,6 @@ a:hover, a:focus, a:active {
   @media only screen and (max-width: 992px) {
     #contato-sidebar {
       padding: 50px 0; } }
-
-#jogoBtn button, #tryBtn button, .content-block .text-block button, #entrar button, .form input[type=submit], .login-box input[type=submit] {
-  font-weight: normal;
-  border-radius: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px; }
-
-#jogoBtn button:active, #tryBtn button:active, .content-block .text-block button:active, #entrar button:active, .form input[type=submit]:active, .login-box input[type=submit]:active {
-  margin-top: 3px;
-  padding-bottom: 19px;
-  border: none; }
-
-#jogoBtn button:focus, #tryBtn button:focus, .content-block .text-block button:focus, #entrar button:focus, .form input[type=submit]:focus, .login-box input[type=submit]:focus {
-  outline: none; }
 
 .login {
   height: auto;
@@ -927,110 +808,6 @@ a:hover, a:focus, a:active {
       width: 90%;
       margin: 127px 5%; } }
 
-/* FONTS */
-h1, h2, button, h3, label, h4 {
-  font-family: "Varela Round", Helvetica, Arial, sans-serif;
-  font-weight: bold; }
-
-@media only screen and (max-width: 992px) {
-  h2, button, h3, label, h4, p, input, textarea {
-    font-size: 1.5em; } }
-@media screen and (max-width: 768px) {
-  h2, button, h3, label, h4, p, input, textarea {
-    font-size: 1.5em; } }
-
-h1 {
-  font-size: 2.6em;
-  color: #266ab8; }
-  @media only screen and (max-width: 992px) {
-    h1 {
-      font-size: 2.2em; } }
-  @media screen and (max-width: 768px) {
-    h1 {
-      font-size: 2.2em; } }
-
-h2, button {
-  font-size: 1.8em;
-  color: #e07b4d; }
-
-h3, label {
-  font-size: 1.8em;
-  color: #2ba7e7; }
-
-h4 {
-  font-size: 1.8em;
-  color: #FFF; }
-
-p, input, textarea {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 1.5em;
-  color: #727272; }
-
-footer p {
-  font-size: 1.2em;
-  color: #FFF; }
-  @media only screen and (max-width: 992px) {
-    footer p {
-      font-size: 1.2em; } }
-  @media screen and (max-width: 768px) {
-    footer p {
-      font-size: 1.5em; } }
-
-#buttons h2 {
-  font-size: 1.5em;
-  color: #FFF; }
-  @media only screen and (max-width: 992px) {
-    #buttons h2 {
-      font-size: 1.3em; } }
-  @media screen and (max-width: 768px) {
-    #buttons h2 {
-      font-size: 1.2em; } }
-
-#cta-index h1 {
-  font-size: 2em;
-  color: #266ab8; }
-
-.blue-block ul, .blue-block li {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 2.1rem;
-  color: #FFF; }
-  @media only screen and (max-width: 992px) {
-    .blue-block ul, .blue-block li {
-      font-size: 1.8rem; } }
-  @media screen and (max-width: 768px) {
-    .blue-block ul, .blue-block li {
-      font-size: 1.8rem; } }
-
-.banner h1 {
-  font-size: 3rem;
-  color: #FFF; }
-  @media only screen and (max-width: 992px) {
-    .banner h1 {
-      font-size: 2.4rem; } }
-  @media screen and (max-width: 768px) {
-    .banner h1 {
-      font-size: 2rem; } }
-
-.minor-text {
-  font-size: 1.2rem;
-  color: #FFF; }
-  @media only screen and (max-width: 992px) {
-    .minor-text {
-      font-size: 1rem; } }
-  @media screen and (max-width: 768px) {
-    .minor-text {
-      font-size: 1rem; } }
-
-.major-text {
-  font-size: 2.4rem;
-  color: #727272; }
-  @media only screen and (max-width: 992px) {
-    .major-text {
-      font-size: 2rem; } }
-  @media screen and (max-width: 768px) {
-    .major-text {
-      font-size: 2rem; } }
-
 .content-block .skype_c2c_textarea_span img, .orange-block .skype_c2c_textarea_span img, .footer-item .skype_c2c_textarea_span img {
   display: none !important; }
 .content-block .skype_c2c_textarea_span .skype_c2c_text_span:hover, .orange-block .skype_c2c_textarea_span .skype_c2c_text_span:hover, .footer-item .skype_c2c_textarea_span .skype_c2c_text_span:hover {
@@ -1065,5 +842,11 @@ footer p {
 
 #em-testes__submit {
   float: right; }
+
+#lhc_status_container, #lhc_need_help_container {
+  border: none !important; }
+
+#lhc_need_help_main_title, #lhc_need_help_sub_title {
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
