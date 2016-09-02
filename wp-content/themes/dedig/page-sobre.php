@@ -17,7 +17,7 @@ get_header();
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-4 img-block">
-							<img src="<?php bloginfo('template_directory'); ?>/img/logo-dedig-sobre.png" />
+							<img src="<?php bloginfo('template_directory'); ?>/img/dedig-logo_pb_byline.svg" />
 						</div>
 						<div class="col-sm-8 text-block minor-text">
 							<h1><?php the_title(); ?></h1>

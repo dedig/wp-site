@@ -52,7 +52,7 @@
 <?php include_once("analyticstracking.php"); ?>
 <div id="wrapper">
 	<header id="main-menu">
-		<a href="<?php echo home_url( '/' ); ?>"><img id="logo-header" src="<?php bloginfo('template_directory'); ?>/img/logo-dedig-header.png" alt="Logo Dedig" /></a>
+		<a href="<?php echo home_url( '/' ); ?>"><img id="logo-header" src="<?php bloginfo('template_directory'); ?>/img/dedig-logo_rgb.svg" alt="Logo Dedig" /></a>
 		<div id="list">
 			<img src="<?php bloginfo('template_directory'); ?>/img/list.png" alt="Menu" />
 		</div>

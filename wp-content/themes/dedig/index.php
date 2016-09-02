@@ -78,10 +78,13 @@
 				</div>
 			</div>
 
-			<div class="row content-block fluid">
-				<div id="video-dedig" class="col-sm-12 text-block">
-					<h1><?php echo $title4; ?></h1>
-					<iframe id="yTubeIFrame"></iframe>
+			<div class="container content-block fluid">
+				<div id="video-dedig" class="row text-block">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<h1><?php echo $title4; ?></h1>
+						<iframe id="yTubeIFrame"></iframe>
+					</div>
 				</div>
 			</div>
 			
