@@ -294,10 +294,7 @@ a:hover, a:focus, a:active {
   width: 70%; }
   @media only screen and (max-width: 767px) {
     #logo-footer {
-      width: auto; } }
-  @media only screen and (max-width: 480px) {
-    #logo-footer {
-      width: 100%; } }
+      width: 80%; } }
 
 .social {
   width: 41px;
@@ -378,19 +375,11 @@ a:hover, a:focus, a:active {
     width: 100%;
     font-size: 3em !important; }
   #cta-index img, #cta-index video, #cta-index iframe, #video-dedig img, #video-dedig video, #video-dedig iframe {
-    width: 80%;
     height: auto;
     min-height: 540px;
-    margin: 0 10% 30px;
     cursor: pointer; }
-    @media only screen and (max-width: 992px) {
-      #cta-index img, #cta-index video, #cta-index iframe, #video-dedig img, #video-dedig video, #video-dedig iframe {
-        width: 70%;
-        margin: 0 15% 30px; } }
     @media only screen and (max-width: 768px) {
       #cta-index img, #cta-index video, #cta-index iframe, #video-dedig img, #video-dedig video, #video-dedig iframe {
-        width: 80%;
-        margin: 0 10% 30px;
         min-height: 345.6px; } }
     @media only screen and (max-width: 480px) {
       #cta-index img, #cta-index video, #cta-index iframe, #video-dedig img, #video-dedig video, #video-dedig iframe {
@@ -437,7 +426,8 @@ a:hover, a:focus, a:active {
 
 #video-dedig img, #video-dedig video, #video-dedig iframe {
   border: 10px solid #000;
-  background-color: #000; }
+  background-color: #000;
+  margin-bottom: 40px; }
 
 .content-block {
   padding-top: 30px;
@@ -601,9 +591,13 @@ a:hover, a:focus, a:active {
 #entrar button {
   float: right; }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .img-block {
     padding-top: 60px; } }
+@media only screen and (max-width: 767px) {
+  .img-block {
+    width: 80%;
+    margin-left: 10%; } }
 
 @media only screen and (max-width: 768px) {
   .post-thumbnail img, .post img, .recomendacoes img {

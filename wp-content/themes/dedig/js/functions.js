@@ -77,7 +77,7 @@ window.onload = function() {
 		iframe.frameBorder = 5;
 	}
 	catch (err) {
-		console.log("Don't have a video in this page.");
+		console.log(err,"Don't have a video in this page.");
 	}
 };
 

@@ -4,7 +4,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 footer-item">
-						<a href="<?php echo home_url( '/' ); ?>"><img id="logo-footer" alt="Logo Dedig" src="<?php bloginfo('template_directory'); ?>/img/logo-dedig-footer.png" /></a>
+						<a href="<?php echo home_url( '/' ); ?>"><img id="logo-footer" alt="Logo Dedig" src="<?php bloginfo('template_directory'); ?>/img/dedig-logo_rgb_byline.svg" /></a>
 					</div>
 					<div class="col-sm-4 footer-item">
 						<h3>MAPA DO SITE</h3>
