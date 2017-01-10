@@ -1,0 +1,62 @@
+.cadastro {
+	@include btn($laranjaclaro, $laranja, $laranjaescuro);
+	margin-top: 100px;
+	margin-bottom: 100px;
+	
+	&__title {
+		margin-top: 30px;
+	}
+
+	p {
+		margin: 30px 0;
+	}
+
+	&__error {
+		padding: 10px;
+		background-color: #df163a;
+		color: #fff;
+		border-radius: 5px;
+		width: 30%;
+		margin-left: 35% !important;
+	}
+
+	&__form {
+		padding: 50px 0 190px;
+
+		label {
+			margin-top: 15px;
+		}
+
+		input[type=submit] {
+			float: right;
+
+			@media only screen and (max-width: $screen-sm-max) {
+				float: none;
+				width: 90%;
+			}
+		}
+	}
+
+	&__radio-block {
+		margin-bottom: 15px;
+
+		&__element {
+			width: 150px;
+			float: left;
+
+			input[type=radio] {
+				width: auto;
+				float: left;
+				text-align: left;
+				margin: 8px 10px 0 0;
+				padding: 0;
+			}
+
+			p {
+				float: left;
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+}
