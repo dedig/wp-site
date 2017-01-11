@@ -23,7 +23,6 @@
             $headers .= sprintf( 'Message-ID: <%s@%s>%s', md5( uniqid( rand( ), true ) ), $_SERVER[ 'HTTP_HOST' ], PHP_EOL );
             $headers .= sprintf( 'X-Priority: %d%s', 3, PHP_EOL );
             $headers .= sprintf( 'X-Mailer: PHP/%s%s', phpversion( ), PHP_EOL );
-            $headers .= sprintf( 'Disposition-Notification-To: %s%s', $email, PHP_EOL );
             $headers .= sprintf( 'MIME-Version: 1.0%s', PHP_EOL );
             $headers .= sprintf( 'Content-Transfer-Encoding: 8bit%s', PHP_EOL );
             $headers .= sprintf( 'Content-Type: text/html; charset="utf-8"%s', PHP_EOL );
