@@ -68,10 +68,16 @@
 <div class="container cadastro">
     <?php if(isset($_POST['download']) && $emailSent): ?>
         <h1 class="cadastro__title">Obrigado <?php echo $nome; ?>!</h1>
-        <p>Seu cadastrado foi efetuado, aguarde um período de 24 horas para entrarmos em contato.</p>
-        <a href="http://download.dedig.com.br/instalar-dedig.exe" download>
-            <button type="button">Download</button>
+        <p>Seu cadastrado foi efetuado, aguarde um período de até 24 horas para entrarmos em contato. Enquanto isso, você já pode baixar o Dedig :)</p>
+        <a href="http://download.dedig.com.br/instalar-dedig.exe" download class="col-xs-12 col-sm-4">
+            <button type="button">Download para Windows</button>
         </a>
+        <a href="https://itunes.apple.com/us/app/dedig-aprender-é-divertido/id1122727491?ls=1&mt=8" download class="col-xs-12 col-sm-4">
+            <button type="button">Download para iOS</button>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=br.com.dedig.fullgame" download class="col-xs-12 col-sm-4">
+            <button type="button">Download para Android</button>
+        </a>       
     <?php else:
         if ($hasError): ?>
             <div class="col-sm-12">
@@ -131,8 +137,25 @@
         		<input id="em-testes__submit" type="submit" value="Enviar">
             </div>
 
-    	</form>
-    <?php endif; ?>
+    	</form>        
+    
+
+    <div class="row">
+        <h2>Já é cadastrado? Faça o download agora!</h2>
+
+        <a href="http://download.dedig.com.br/instalar-dedig.exe" download class="col-xs-12 col-sm-4">
+            <button type="button">Download para Windows</button>
+        </a>
+        <a href="https://itunes.apple.com/us/app/dedig-aprender-é-divertido/id1122727491?ls=1&mt=8" download class="col-xs-12 col-sm-4">
+            <button type="button">Download para iOS</button>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=br.com.dedig.fullgame" download class="col-xs-12 col-sm-4">
+            <button type="button">Download para Android</button>
+        </a>  
+        
+    </div>
+
+<?php endif; ?>
 </div>
 
 <?php
