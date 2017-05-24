@@ -93,27 +93,27 @@
 
             <div class="col-sm-12">
                 <label for="nome">Nome: </label>
-                <input type="text" name="nome" placeholder="Digite seu nome..." required>
+                <input type="text" name="nome" placeholder="Digite seu nome" required>
             </div>
 
             <div class="col-sm-12">
                 <label for="email">E-mail: </label>
-        		<input type="email" name="email" placeholder="Digite seu e-mail..." required>
+        		<input type="email" name="email" placeholder="Digite seu e-mail" required>
             </div>
 
             <div class="col-sm-6">
-                <label for="email">Telefone fixo (apenas números): </label>
-        		<input pattern="^\d{10}$" type="tel" name="telFixo" placeholder="Telefone fixo...">
+                <label for="email">Telefone: </label>
+        		<input pattern="^\d{10,14}$" type="tel" name="telFixo" placeholder="Número com DDD, sem espaços (opcional)">
             </div>
 
             <div class="col-sm-6">
-                <label for="email">Telefone celular (apenas números): </label>
-        		<input pattern="^\d{11}$" type="tel" name="celular" placeholder="Telefone celular...">
+                <label for="email">Celular: </label>
+        		<input pattern="^\d{10,14}$" type="tel" name="celular" placeholder="Número com DDD, sem espaços (opcional)">
             </div>
 
             <div class="col-sm-12">
                 <label for="instituicao">Empresa / Instituição: </label>
-        		<input type="text" name="instituicao" placeholder="Digite o nome de sua empresa ou instituição...">
+        		<input type="text" name="instituicao" placeholder="Digite o nome de sua empresa ou instituição (opcional)">
             </div>
 
             <div class="cadastro__radio-block">
@@ -139,7 +139,6 @@
 
     	</form>        
     
-
     <div class="row">
         <h2>Já é cadastrado? Faça o download agora!</h2>
 

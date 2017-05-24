@@ -6,7 +6,7 @@
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $name    = stripslashes(trim($_POST['nome']));
         $email   = stripslashes(trim($_POST['email']));
-        $subject = stripslashes(trim($_POST['assunto']));
+        $subject = '[CONTATO] ' . stripslashes(trim($_POST['assunto']));
         $message = stripslashes(trim($_POST['mensagem']));
         $pattern = '/[\r\n]|Content-Type:|Bcc:|Cc:/i';
 
@@ -45,8 +45,7 @@
 		el.style.color='#727272';
 	}
 	function inBlur(el) {
-		if(el.value=='' || el.value=='Digite sua mensagem...') {
-			el.value='Digite sua mensagem...';
+		if(el.value=='') {
 			el.style.color='#a9a9a9'; }
 		else {
 			el.style.color='#727272';
@@ -72,13 +71,13 @@
 						<form action="<?php echo $_SERVER['REQUEST_URI']; ?>" role="form" method="POST">
 							<h1>Entre em Contato</h1>
 							<label>Nome:</label>
-							<input type="text" name="nome" placeholder="Digite seu nome..." required>
+							<input type="text" name="nome" placeholder="Digite seu nome" required>
 							<label>E-mail:</label>
-							<input type="email" name="email" placeholder="Digite seu e-mail..." required>
+							<input type="email" name="email" placeholder="Digite seu e-mail" required>
 							<label>Assunto:</label>
-							<input type="text" name="assunto" placeholder="Digite o assunto..." required>
+							<input type="text" name="assunto" placeholder="Digite o assunto" required>
 							<label>Mensagem:</label>
-							<textarea rows="5" name="mensagem" onfocus="inFocus(this)" onblur="inBlur(this)" style="color:#a9a9a9;" required>Digite sua mensagem...</textarea>
+							<textarea rows="5" name="mensagem" onfocus="inFocus(this)" onblur="inBlur(this)" style="color:#a9a9a9;" required placeholder='Digite sua mensagem'></textarea>
 							<input type="submit" value="Enviar">
 						</form>
 					</div>
