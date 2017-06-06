@@ -145,10 +145,10 @@
         <a href="http://download.dedig.com.br/instalar-dedig.exe" download class="col-xs-12 col-sm-4">
             <button type="button">Download para Windows</button>
         </a>
-        <a href="https://itunes.apple.com/us/app/dedig-aprender-é-divertido/id1122727491?ls=1&mt=8" download class="col-xs-12 col-sm-4">
+        <a href="https://itunes.apple.com/us/app/dedig-aprender-é-divertido/id1122727491?ls=1&mt=8" class="col-xs-12 col-sm-4">
             <button type="button">Download para iOS</button>
         </a>
-        <a href="https://play.google.com/store/apps/details?id=br.com.dedig.fullgame" download class="col-xs-12 col-sm-4">
+        <a href="https://play.google.com/store/apps/details?id=br.com.dedig.fullgame" class="col-xs-12 col-sm-4">
             <button type="button">Download para Android</button>
         </a>  
         

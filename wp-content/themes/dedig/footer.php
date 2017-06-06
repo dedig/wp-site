@@ -37,7 +37,7 @@
 				</div>
 			</div>
 			<div id="copyright" class="col-sm-12">
-				<p>Dedig ©  2015 - Todos os direitos reservados</p>
+				<p>Dedig ©  2015-2017 - Todos os direitos reservados</p>
 			</div>
 		</div>
 	</footer>
