@@ -140,18 +140,21 @@
     	</form>        
     
     <div class="row">
-        <h2>Já é cadastrado? Faça o download agora!</h2>
+        <h2>Já tem cadastro? Escolha uma plataforma e faça o download agora!</h2>
 
-        <a href="http://download.dedig.com.br/instalar-dedig.exe" download class="col-xs-12 col-sm-4">
-            <button type="button">Download para Windows</button>
+        <a href="http://download.dedig.com.br/instalar-dedig.exe" download class="col-xs-12 col-sm-3">
+            <button type="button">Windows</button>
         </a>
-        <a href="https://itunes.apple.com/us/app/dedig-aprender-é-divertido/id1122727491?ls=1&mt=8" class="col-xs-12 col-sm-4">
-            <button type="button">Download para iOS</button>
+        <a href="https://itunes.apple.com/us/app/dedig-aprender-é-divertido/id1122727491?ls=1&mt=8" class="col-xs-12 col-sm-3">
+            <button type="button">iOS</button>
         </a>
-        <a href="https://play.google.com/store/apps/details?id=br.com.dedig.fullgame" class="col-xs-12 col-sm-4">
-            <button type="button">Download para Android</button>
-        </a>  
-        
+        <a href="https://play.google.com/store/apps/details?id=br.com.dedig.fullgame" class="col-xs-12 col-sm-3">
+            <button type="button">Android</button>
+        </a>
+	<a href="http://download.dedig.com.br/linux/instalar-dedig.zip" download class="col-xs-12 col-sm-3">
+	    <button type="button">Linux (64bit)</button>
+	</a>
+ 
     </div>
 
 <?php endif; ?>
