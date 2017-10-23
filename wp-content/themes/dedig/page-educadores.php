@@ -45,7 +45,6 @@ get_header(); ?>
 					</div>
 					<div class="col-md-8 text-block">
 						<h2><?php the_title(); ?></h2>
-						<p><strong>Autor: <?php the_author_posts_link(); ?> em: <?php the_time('d/m/Y') ?></strong></p>
 					</div>
 				</a>
 			</div>
