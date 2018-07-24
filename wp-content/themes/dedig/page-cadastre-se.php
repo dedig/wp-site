@@ -159,10 +159,10 @@
         <a href="https://play.google.com/store/apps/details?id=br.com.dedig.fullgame">
             <button type="button">Android</button>
         </a>
-        <a href="https://dedigdl.blob.core.windows.net/linux-latest/Dedig_1.3-1_amd64.deb" download>
+        <a href="http://download.dedig.com.br/linux/latest.zip" download>
             <button type="button">Linux (64bit)</button>
         </a>
-        <a href="https://dedigdl.blob.core.windows.net/linux-latest/Dedig_1.3-1_i386.deb" download>
+        <a href="http://download.dedig.com.br/linux/latest32.zip" download>
             <button type="button">Linux (32bit)</button>
         </a>
         <br><a href="<?php echo home_url( '/index.php/manual-linux' ); ?>">Manual de instalação para Linux</a>
